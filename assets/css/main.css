@@ -8814,11 +8814,24 @@ START: Home 5 css
   color: #fff;
 }
 
+@media only screen and (max-width: 767px) {
+  .section-6__title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+.about-7__content .mt-primary-btn {
+  background-color: #0030AD;
+  color: #ffffff;
+}
+.about-7__content .mt-primary-btn i {
+  margin-top: 5px;
+}
 .about-7__content P {
   font-size: 18px;
-  color: #030611;
-  font-weight: 500;
-  opacity: 0.6;
+  color: rgba(3, 6, 17, 0.6);
+  font-weight: 400;
   margin-bottom: 35px;
 }
 .about-7__content__list ul {
@@ -8828,16 +8841,11 @@ START: Home 5 css
   font-size: 16px;
   color: #030611;
   font-weight: 600;
-  background: linear-gradient(90deg, #F4ECE1 0%, #FFFAF3 100%);
   border-radius: 4px;
-  margin-bottom: 14px;
-  max-width: 335px;
-  padding: 8px 10px;
+  margin-bottom: 30px;
 }
-@media only screen and (max-width: 767px) {
-  .about-7__content__list ul li {
-    font-size: 13px;
-  }
+.about-7__content__list ul li svg {
+  margin-right: 5px;
 }
 .about-7__shape {
   bottom: -15px;

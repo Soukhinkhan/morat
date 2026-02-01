@@ -345,6 +345,7 @@ START: Home 5 css
             line-height: 34px;
             color: #030611;
             transition: all 0.3s ease-in-out;
+
             &:hover {
                 color: #0030AD;
             }
@@ -537,14 +538,31 @@ START: Home 5 css
 }
 
 //about-7
-.about-7 {
+.section-6 {
+    &__title {
+        @include breakpoint(sm) {
+            font-size: 28px;
+            line-height: 38px;
+        }
+    }
+}
 
+.about-7 {
     &__content {
+
+        .mt-primary-btn {
+            background-color: #0030AD;
+            color: #ffffff;
+
+            i {
+                margin-top: 5px;
+            }
+        }
+
         & P {
             font-size: 18px;
-            color: #030611;
-            font-weight: 500;
-            opacity: .6;
+            color: rgb(3 6 17 / 60%);
+            font-weight: 400;
             margin-bottom: 35px;
         }
 
@@ -556,15 +574,11 @@ START: Home 5 css
                     font-size: 16px;
                     color: #030611;
                     font-weight: 600;
-                    background: linear-gradient(90deg, #F4ECE1 0%, #FFFAF3 100%);
                     border-radius: 4px;
-                    margin-bottom: 14px;
-                    max-width: 335px;
-                    padding: 8px 10px;
+                    margin-bottom: 30px;
 
-
-                    @include breakpoint(sm) {
-                        font-size: 13px;
+                    svg {
+                        margin-right: 5px;
                     }
                 }
             }
