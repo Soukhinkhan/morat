@@ -469,4 +469,37 @@ Preloader activation
         },0);
         return false;
     });
+
+
+    // blog-7-slide active 
+    let blog7Slide = new Swiper(".blog-7__active", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        roundLengths: true,
+        clickable: true,
+        navigation: {
+            nextEl: ".blog-7-button-arrow-next",
+            prevEl: ".blog-7-button-arrow-prev",
+        },
+        autoplay: {
+            delay: 3000,
+        },
+        breakpoints: {
+            1400: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            0: {
+                slidesPerView: 1,
+            },
+        },
+    });
+
+
 })(jQuery);
