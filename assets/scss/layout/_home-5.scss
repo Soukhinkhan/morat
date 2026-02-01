@@ -621,3 +621,316 @@ START: Home 5 css
         }
     }
 }
+
+//choose-us-5
+.choose-us-5 {
+    .choose-us-5-wrap {
+        background: #FFFFFF;
+        border: 1px solid rgba(3, 6, 17, 0.1);
+        border-radius: 15px;
+
+        @include breakpoint(md) {
+            border: 0;
+        }
+
+        .choose-5-item {
+            text-align: center;
+            border-right: 1px solid rgba(3, 6, 17, 0.1);
+            padding: 50px 0;
+
+            @include breakpoint(md) {
+                border-right: 0;
+                padding: 0 0;
+            }
+
+            .thumb {
+                img {
+                    width: auto;
+                }
+            }
+
+            .content {
+                .title {
+                    a {
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 32px;
+                        color: #030611;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            color: #0030AD;
+                        }
+
+                        @include breakpoint(sm) {
+                            font-size: 21px;
+                        }
+                    }
+                }
+
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: rgb(3 6 17 / 60%);
+                    margin-bottom: 0;
+
+                    @include breakpoint(sm) {
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .choose-5-item-2 {
+            border-right: 0;
+        }
+    }
+}
+
+//pricing-5
+.pricing-5 {
+    &__button {
+        display: flex;
+        justify-content: center;
+
+        /* Toggle Wrapper */
+        .toggle-pill {
+            position: relative;
+            width: 220px;
+            height: 50px;
+            background: #0030AD;
+            border-radius: 30px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        /* Text */
+        .label {
+            width: 50%;
+            text-align: center;
+            z-index: 2;
+            font-size: 14px;
+            font-weight: 600;
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+
+        .label.active {
+            color: #010915;
+        }
+
+        /* Sliding Button */
+        .slider {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: calc(50% - 5px);
+            height: 40px;
+            background: #ffffff;
+            border-radius: 25px;
+            transition: transform 0.35s ease;
+        }
+    }
+
+    .pricing-5-item {
+        border: 1px solid rgba(3, 6, 17, 0.1);
+        border-radius: 10px;
+        padding: 50px 40px;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+            background-color: #0030AD;
+
+            .title {
+                color: #ffffff;
+            }
+
+            p {
+                color: #ffffff;
+            }
+
+            .starting {
+                color: #ffffff;
+            }
+
+            .pricing {
+                .price {
+                    color: #ffffff;
+                }
+
+                span {
+                    color: #ffffff;
+                }
+            }
+
+            .mt-primary-btn {
+                background-color: #FFFFFF;
+                color: #030611;
+            }
+        }
+
+        .title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 32px;
+            color: #030611;
+            margin-bottom: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgb(3 6 17 / 70%);
+            margin-bottom: 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .starting {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 12px;
+            color: #030611;
+            margin-top: 35px;
+            margin-bottom: 35px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .pricing {
+            .price {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 50px;
+                line-height: 30px;
+                color: #030611;
+                margin-bottom: 14px;
+                transition: all 0.3s ease-in-out;
+            }
+
+            span {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 12px;
+                color: rgb(3 6 17 / 70%);
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        .mt-primary-btn {
+            background-color: #030611;
+            color: #ffffff;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 25px;
+            padding: 10.5px 30px;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+//service-5
+.service-5 {
+    .service-5-wrapper {
+        border: 1px solid rgba(3, 6, 17, 0.1);
+        border-radius: 10px;
+
+        @include breakpoint(md) {
+            border: 0;
+            border-radius: 0;
+        }
+
+        .service-5-bottom-border {
+            margin-right: 0;
+            margin-left: 0;
+
+            &>* {
+                padding-left: 0;
+                padding-right: 0;
+
+                @include breakpoint(md) {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+
+    .service-5-item {
+        text-align: center;
+        padding: 30px 0;
+
+        img {
+            width: auto;
+        }
+
+        .title {
+            margin-bottom: 10px;
+
+            a {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 32px;
+                color: #030611;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: #0030AD;
+                }
+            }
+        }
+
+        P {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgb(3 6 17 / 70%);
+            margin-bottom: 27px;
+
+            @include breakpoint(lg) {
+                br {
+                    display: none;
+                }
+            }
+        }
+
+        .service-5-btn {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            color: #030611;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: #0030AD;
+            }
+        }
+    }
+
+    .service-5-item-2 {
+        border-top: 1px solid rgba(3, 6, 17, 0.1);
+
+        @include breakpoint(md) {
+            border-top: 0;
+        }
+    }
+}

@@ -5,9 +5,9 @@
 
     var windowOn = $(window);
 
-/*======================================
-Preloader activation
-========================================*/
+    /*======================================
+    Preloader activation
+    ========================================*/
     $(window).on('load', function (event) {
         $('#preloader').delay(1000).fadeOut(500);
     });
@@ -117,17 +117,17 @@ Preloader activation
     });
 
     // Custom Cursor
-        $('body').append('<div class="mt-cursor"></div>');
-        var cursor = $('.mt-cursor'),
-            linksCursor = $('a, .swiper-nav, button, .cursor-effect'),
-            crossCursor = $('.cross-cursor');
+    $('body').append('<div class="mt-cursor"></div>');
+    var cursor = $('.mt-cursor'),
+        linksCursor = $('a, .swiper-nav, button, .cursor-effect'),
+        crossCursor = $('.cross-cursor');
 
-        $(window).on('mousemove', function (e) {
-            cursor.css({
-                'transform': 'translate(' + (e.clientX - 15) + 'px,' + (e.clientY - 15) + 'px)',
-                'visibility': 'inherit'
-            });
+    $(window).on('mousemove', function (e) {
+        cursor.css({
+            'transform': 'translate(' + (e.clientX - 15) + 'px,' + (e.clientY - 15) + 'px)',
+            'visibility': 'inherit'
         });
+    });
 
     /* Odometer */
     $(".odometer").waypoint(
@@ -451,7 +451,7 @@ Preloader activation
     });
     // Scroll To Top
     var scrollTop = $("#scrollup");
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
         var topPos = $(this).scrollTop();
         if (topPos > 100) {
             $('#scrollup').removeClass('hide');
@@ -463,10 +463,10 @@ Preloader activation
         }
     });
 
-    $(scrollTop).on("click", function() {
+    $(scrollTop).on("click", function () {
         $('html, body').animate({
             scrollTop: 0
-        },0);
+        }, 0);
         return false;
     });
 
@@ -499,6 +499,46 @@ Preloader activation
                 slidesPerView: 1,
             },
         },
+    });
+
+
+
+
+    //pricing toggle btn
+
+    const pill = document.getElementById("pill");
+    const slider = document.getElementById("slider");
+    const monthly = document.getElementById("monthly");
+    const yearly = document.getElementById("yearly");
+
+    // 🔥 IMPORTANT: all prices
+    const prices = document.querySelectorAll(".price");
+
+    let isYear = false;
+
+    pill.addEventListener("click", () => {
+        isYear = !isYear;
+
+        if (isYear) {
+            // Yearly
+            slider.style.transform = "translateX(105px)";
+            monthly.classList.remove("active");
+            yearly.classList.add("active");
+
+            prices.forEach(price => {
+                price.innerHTML = `$99.00`;
+            });
+
+        } else {
+            // Monthly
+            slider.style.transform = "translateX(0)";
+            yearly.classList.remove("active");
+            monthly.classList.add("active");
+
+            prices.forEach(price => {
+                price.innerHTML = `$55.00`;
+            });
+        }
     });
 
 
