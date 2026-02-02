@@ -501,6 +501,63 @@
         },
     });
 
+    // testimonial-active 5
+    // var testimonial_3_active = new Swiper(".testimonial-active", {
+    //     slidesPerView: 3.5,
+    //     spaceBetween: 24,
+    //     loop: true,
+    //     autoplay: true,
+    //     speed: 600,
+    //     breakpoints: {
+    //         320: {
+    //             slidesPerView: 1,
+    //             slidesPerGroup: 1,
+    //         },
+    //         767: {
+    //             slidesPerView: 2,
+    //             spaceBetween: 20,
+    //         },
+    //         1024: {
+    //             slidesPerView: 2,
+    //             slidesPerGroup: 1,
+    //         },
+    //         1200: {
+    //             slidesPerView: 2,
+    //             slidesPerGroup: 1,
+    //         },
+    //         1400: {
+    //             slidesPerView: 3.5,
+    //             slidesPerGroup: 1,
+    //         },
+    //     },
+    // });
+
+    var testimonial_3_active = new Swiper(".testimonial-active", {
+        slidesPerView: 4,   // 🔥 magic value
+        spaceBetween: 24,
+        loop: true,
+        speed: 600,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1200: {
+                slidesPerView: 4, 
+            },
+        },
+    });
+
+
+
+
 
 
 
