@@ -13,15 +13,18 @@ START: Theme Header CSS
     left: 0;
     width: 100%;
     z-index: 99;
+
     @include breakpoint(md) {
         position: inherit;
     }
+
     .header-container {
         max-width: 1420px;
         width: 100%;
         padding: 0 15px;
         margin: 0 auto;
     }
+
     .primary-header-inner {
         background-color: var(--mt-color-common-white);
         display: flex;
@@ -30,41 +33,51 @@ START: Theme Header CSS
         flex-wrap: wrap;
         padding: 0 50px;
         border-radius: 0 0 15px 15px;
+
         @include breakpoint(lg) {
-            padding: 20px 0;
+            padding: 20px 15px;
         }
+
         .header-logo {
             img {
                 max-width: 170px;
             }
+
             @include breakpoint(xl) {
                 img {
                     max-width: 150px;
                 }
             }
+
             @include breakpoint(lg) {
                 img {
                     max-width: 150px;
                 }
             }
         }
+
         .header-menu-wrap {
             display: flex !important;
             align-items: center;
+
             .sub-menu {
                 margin: 0;
                 padding: 0;
                 list-style: none;
+
                 @include breakpoint(md) {
                     display: none;
                 }
+
                 li {
                     display: inline-block;
                     position: relative;
                     margin: 0 20px;
+
                     @include breakpoint(lg) {
                         margin: 0 10px;
                     }
+
                     a {
                         font-family: var(--mt-ff-body);
                         color: var(--mt-color-heading-primary);
@@ -78,9 +91,15 @@ START: Theme Header CSS
                         text-decoration: none;
                         -webkit-font-smoothing: antialiased;
                         transition: all 0.3s ease-in-out;
+
+                        @include breakpoint(lg) {
+                            padding: 30px 0;
+                        }
+
                         i {
                             font-size: 13px;
                         }
+
                         &:before {
                             content: "";
                             background-color: var(--mt-color-theme-primary);
@@ -92,6 +111,7 @@ START: Theme Header CSS
                             transition: all 0.4s ease-in-out;
                         }
                     }
+
                     ul {
                         background-color: var(--mt-color-common-white);
                         display: block;
@@ -112,28 +132,34 @@ START: Theme Header CSS
                         transform-origin: 0 0;
                         transition: all 0.6s ease;
                     }
-                    &:hover > ul {
+
+                    &:hover>ul {
                         visibility: visible;
                         transition: all 0.6s ease;
                         opacity: 1;
                         transform: none;
                     }
+
                     li {
                         display: flex;
                         justify-content: space-between;
                         text-align: left;
                         position: relative;
                         transition: all 0.3s ease-in-out;
-                        &:not(:last-of-type){
+
+                        &:not(:last-of-type) {
                             border-bottom: 1px dashed var(--mt-color-border-1);
                         }
+
                         &:last-child {
                             margin: 0;
                             border-bottom: none;
                         }
+
                         &:hover {
                             background-color: var(--mt-color-theme-primary);
                         }
+
                         a {
                             display: block;
                             height: auto;
@@ -146,36 +172,45 @@ START: Theme Header CSS
                             width: 100%;
                             -webkit-font-smoothing: antialiased;
                             margin: 0;
+
                             &:hover {
                                 padding-left: 10px;
                                 color: var(--mt-color-common-white);
                             }
+
                             &:before {
                                 display: none;
                             }
                         }
                     }
+
                     &:hover a:before {
                         width: 100%;
                     }
                 }
+
                 .menu-item-has-children {
                     position: relative;
+
                     a {
                         padding-right: 15px;
+
                         @include breakpoint(lg) {
                             padding-right: 15px;
                         }
                     }
+
                     ul {
                         li {
                             margin: 0;
                             padding-left: 25px;
+
                             a {
                                 padding-right: 0;
                             }
                         }
                     }
+
                     &:after {
                         background-image: none;
                         font-family: "Font Awesome 6 Pro";
@@ -189,15 +224,18 @@ START: Theme Header CSS
                         transition: all 0.3s ease-in-out;
                         cursor: pointer;
                     }
+
                     &:hover:before {
                         color: var(--mt-color-theme-primary);
                     }
                 }
             }
         }
+
         .header-right {
             display: flex;
             align-items: center;
+
             .header-logo {
                 @include breakpoint(sm) {
                     img {
@@ -205,25 +243,31 @@ START: Theme Header CSS
                     }
                 }
             }
+
             .header-btn {
                 background-color: var(--mt-color-theme-primary);
                 color: var(--mt-color-common-white);
                 margin-left: 20px;
-                &:hover{
+
+                &:hover {
                     color: var(--mt-color-heading-primary);
                 }
+
                 &:after,
-                &:before{
+                &:before {
                     background-color: var(--mt-color-theme-secondary);
                 }
+
                 @include breakpoint(md) {
                     margin-left: 0;
                     margin-right: 30px;
                 }
+
                 @include breakpoint(sm) {
                     display: none;
                 }
             }
+
             .sidebar-trigger {
                 background-color: var(--mt-color-heading-primary);
                 display: flex;
@@ -233,12 +277,15 @@ START: Theme Header CSS
                 padding: 15px 10px;
                 margin-left: 40px;
                 border-radius: 3px;
-                @include breakpoint(lg){
+
+                @include breakpoint(lg) {
                     margin-left: 15px;
                 }
+
                 @include breakpoint(md) {
                     display: none;
                 }
+
                 span {
                     background-color: var(--mt-color-common-white);
                     width: 30px;
@@ -246,48 +293,59 @@ START: Theme Header CSS
                     display: block;
                     border-radius: 2px;
                     transition: all 0.3s ease-in-out;
+
                     &:nth-child(2) {
                         width: 20px;
                     }
+
                     &:nth-child(3) {
                         width: 25px;
                     }
                 }
+
                 &:hover {
                     span {
                         &:nth-child(2) {
                             width: 25px;
                         }
+
                         &:nth-child(3) {
                             width: 20px;
                         }
                     }
                 }
             }
+
             .header-right-item {
                 display: flex;
                 align-items: center;
+
                 @include breakpoint(md) {
                     line-height: 1;
                 }
+
                 .mobile-side-menu-toggle {
                     color: var(--mt-color-heading-primary);
                     font-size: 30px;
                 }
+
                 .search-icon {
                     font-size: 16px;
                     margin-left: 55px;
                     cursor: pointer;
+
                     @include breakpoint(md) {
                         margin-right: 20px;
                     }
                 }
             }
         }
+
         @include breakpoint(md) {
             .mean-push {
                 display: none;
             }
+
             .header-right {
                 width: 100%;
             }
@@ -308,6 +366,7 @@ START: Theme Header CSS
     z-index: 100;
     display: block;
     cursor: pointer;
+
     @include breakpoint(md) {
         display: none;
     }
@@ -332,6 +391,7 @@ START: Theme Header CSS
     -o-transition: transform 0.5s ease;
     transition: transform 0.5s ease;
     backface-visibility: hidden;
+
     .side-menu-close {
         background-color: var(--mt-color-theme-primary);
         position: absolute;
@@ -345,15 +405,18 @@ START: Theme Header CSS
         border-radius: 50%;
         text-align: center;
     }
+
     &.is-open {
         -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
         transform: translateX(0);
     }
+
     @include breakpoint(md) {
         display: none;
     }
 }
+
 .side-menu-content {
     .side-menu-header {
         font-family: var(--mt-ff-body);
@@ -364,6 +427,7 @@ START: Theme Header CSS
         width: 100%;
         margin-bottom: 40px;
     }
+
     .side-menu-item {
         display: flex;
         align-items: center;
@@ -372,13 +436,16 @@ START: Theme Header CSS
         border: 1px solid transparent;
         transition: all 0.3s ease-in-out;
         margin-bottom: 30px;
+
         .side-menu-thumb-box {
             display: flex;
             align-items: center;
             column-gap: 30px;
+
             img {
                 max-width: 150px;
             }
+
             .side-menu-info {
                 .side-menu-title {
                     font-family: var(--mt-ff-body);
@@ -388,32 +455,39 @@ START: Theme Header CSS
                     line-height: 1;
                     margin-bottom: 10px;
                 }
+
                 p {
                     max-width: 400px;
                     width: 100%;
+
                     &:last-child {
                         margin-bottom: 0;
                     }
                 }
             }
         }
+
         .side-menu-arrow {
             font-size: 45px;
             color: var(--mt-color-theme-primary);
             transform: rotate(-45deg);
             transition: all 0.3s ease-in-out;
         }
+
         &:hover {
             border: 1px solid var(--mt-color-border-6);
         }
+
         &:hover .side-menu-arrow {
             transform: rotate(0deg);
         }
+
         &:last-child {
             margin-bottom: 0;
         }
     }
 }
+
 .side-menu-overlay {
     background-color: rgba(0, 0, 0, 0.7);
     height: 100%;
@@ -428,12 +502,14 @@ START: Theme Header CSS
     -o-transition: all 600ms ease;
     transition: all 600ms ease;
     z-index: 10;
+
     &.is-open {
         width: 100%;
         opacity: 0.5;
         visibility: visible;
         cursor: url(../img/cancel.png), auto;
     }
+
     @include breakpoint(md) {
         display: none;
     }
@@ -447,6 +523,7 @@ START: Theme Header CSS
     top: 0;
     display: none;
     z-index: 99;
+
     &.fixed {
         display: block;
         animation-name: menuSticky;
@@ -455,19 +532,21 @@ START: Theme Header CSS
         -webkit-animation-duration: 1s;
         animation-timing-function: ease;
         -webkit-animation-timing-function: ease;
-        box-shadow: 0px 1px 3px 0px rgba(255, 255, 255, 0.1);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
+
     .header {
         background-color: var(--mt-color-common-white);
         position: relative;
         top: 0;
+
         .top-bar {
             display: none;
         }
     }
 }
 
-.header-2 .sticky-header-wrap .header{
+.header-2 .sticky-header-wrap .header {
     background-color: #171719;
 }
 
@@ -496,6 +575,7 @@ START: Theme Header CSS
 .mobile-side-menu {
     display: none;
 }
+
 @include breakpoint(md) {
     .mobile-side-menu {
         background-color: var(--mt-color-common-white);
@@ -515,26 +595,31 @@ START: Theme Header CSS
         -o-transition: transform 0.5s ease;
         transition: transform 0.5s ease;
         backface-visibility: hidden;
+
         @include breakpoint(sm) {
             padding: 40px 20px;
             width: 100%;
             max-width: 320px;
         }
+
         &.is-open {
             -webkit-transform: translateX(0);
             -ms-transform: translateX(0);
             transform: translateX(0);
         }
+
         .side-menu-head {
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-bottom: 50px;
-            a{
-                img{
+
+            a {
+                img {
                     max-width: 120px;
                 }
             }
+
             .mobile-side-menu-close {
                 position: fixed;
                 top: 35px;
@@ -548,52 +633,62 @@ START: Theme Header CSS
                 align-items: center;
                 justify-content: center;
                 border: 1px solid var(--mt-color-border-1);
+
                 @include breakpoint(sm) {
                     right: 16px;
                 }
+
                 &:hover {
                     background-color: var(--mt-color-theme-primary);
                     color: var(--mt-color-common-white);
                 }
             }
         }
+
         .side-menu-wrap {
             overflow: hidden;
             margin-bottom: 50px;
         }
+
         p {
             color: var(--mt-color-common-white);
             margin-bottom: 50px;
         }
+
         .list-header {
             color: var(--mt-color-common-white);
             font-family: var(--mt-ff-body);
             font-weight: 400;
             margin-bottom: 30px;
         }
+
         .side-menu-list {
             li {
                 font-family: var(--mt-ff-heading);
                 font-size: 14px;
                 font-weight: 500;
                 color: var(--mt-color-heading-primary);
+
                 span,
-                a{
+                a {
                     color: var(--mt-color-heading-primary);
                     margin-left: 10px;
                     font-size: 14px;
                 }
-                i{
+
+                i {
                     margin-right: 10px;
                 }
             }
         }
+
         .side-menu-social {
             ul {
                 display: flex;
                 align-items: center;
                 column-gap: 10px;
                 list-style: none;
+
                 li {
                     a {
                         background-color: var(--mt-color-theme-bg-dark-deep);
@@ -607,6 +702,7 @@ START: Theme Header CSS
                         display: block;
                         margin-bottom: 10px;
                         transition: all 0.3s ease-in-out;
+
                         &:hover {
                             background-color: var(--mt-color-theme-primary);
                             color: var(--mt-color-common-white);
@@ -615,29 +711,36 @@ START: Theme Header CSS
                 }
             }
         }
+
         .mean-bar {
             background-color: transparent;
             min-height: auto;
             padding: 0;
+
             .meanmenu-reveal {
                 display: none !important;
             }
+
             .mean-nav {
                 background-color: transparent;
                 margin-top: 0;
                 padding-top: 20px;
-                &.mean-nav > ul {
+
+                &.mean-nav>ul {
                     display: block !important;
+
                     li {
                         position: relative;
                         float: none;
                         display: block;
                         width: auto;
+
                         &:not(:last-of-type) {
                             margin-bottom: 24px;
                             padding-bottom: 20px;
                             border-bottom: 1px solid var(--mt-color-border-1);
                         }
+
                         a {
                             color: var(--mt-color-heading-primary);
                             font-size: 22px;
@@ -646,10 +749,12 @@ START: Theme Header CSS
                             border-top: none;
                             padding: 0;
                             float: none;
+
                             @include breakpoint(sm) {
                                 font-size: 18px;
                             }
                         }
+
                         a.mean-expand {
                             background-color: var(--mt-color-theme-primary);
                             color: var(--mt-color-common-white);
@@ -660,42 +765,52 @@ START: Theme Header CSS
                             width: 25px;
                             height: 25px;
                             @include flex-center;
+
                             &:before,
                             &:after {
                                 font-size: 14px;
                                 font-family: "Font Awesome 6 Pro";
                                 font-weight: 900;
                             }
+
                             &:before {
                                 content: "\2b";
                             }
-                            &.mean-clicked{
+
+                            &.mean-clicked {
                                 background-color: var(--mt-color-theme-secondary);
                                 color: var(--mt-color-heading-primary);
                             }
+
                             &.mean-clicked:after {
                                 content: "\f068";
                             }
+
                             &.mean-clicked:before {
                                 display: none;
                             }
+
                             i {
                                 display: none;
                             }
                         }
+
                         ul {
                             padding: 0 0 0 30px;
                             margin-top: 20px;
+
                             li {
                                 &:not(:last-of-type) {
                                     padding-bottom: 15px;
                                     margin-bottom: 15px;
                                 }
+
                                 a {
                                     padding: 0;
                                     font-size: 20px;
                                     font-weight: 500;
                                     text-transform: capitalize;
+
                                     @include breakpoint(sm) {
                                         font-size: 14px;
                                     }
@@ -707,6 +822,7 @@ START: Theme Header CSS
             }
         }
     }
+
     .mobile-side-menu-overlay {
         background-color: rgba(0, 0, 0, 0.7);
         height: 100%;
@@ -722,6 +838,7 @@ START: Theme Header CSS
         transition: all 600ms ease;
         z-index: 10;
         display: block;
+
         &.is-open {
             width: 100%;
             opacity: 0.5;
@@ -746,15 +863,18 @@ START: Theme Header CSS
     -webkit-transition: 500ms ease all;
     -moz-transition: 500ms ease all;
     transition: 500ms ease all;
+
     .box-inner-wrap {
         width: 100%;
         height: 100%;
+
         form {
             position: relative;
             width: 100%;
             max-width: 560px;
             margin: 0 auto;
             padding: 0 15px;
+
             input {
                 width: 100%;
                 padding: 30px 30px;
@@ -763,18 +883,22 @@ START: Theme Header CSS
                 border: none;
                 color: #ddd;
                 border: 1px solid #666;
+
                 @include tp-placeholder {
                     color: #666;
                     font-size: 20px;
                 }
+
                 &:focus {
                     outline: none;
                 }
             }
         }
+
         &:hover {
             cursor: url(../img/cross.png), auto;
         }
+
         button {
             position: absolute;
             display: flex;
@@ -792,20 +916,24 @@ START: Theme Header CSS
             -webkit-transition: 500ms ease all;
             -moz-transition: 500ms ease all;
             transition: 500ms ease all;
+
             &:hover {
                 color: #ddd;
             }
+
             &:focus {
                 outline: none;
             }
         }
     }
+
     &.toggled {
         top: 0;
         opacity: 1;
         visibility: visible;
     }
 }
+
 .popup-tags {
     position: relative;
     margin: 0 auto;
@@ -817,55 +945,69 @@ START: Theme Header CSS
     .header-container {
         max-width: 1440px;
     }
+
     .top-bar-inner,
     .top-bar {
         @include flex-vertical-center;
         justify-content: space-between;
         padding: 20px 0;
         border-bottom: 1px solid var(--mt-color-border-2);
+
         @include breakpoint(sm) {
             display: none;
         }
+
         .top-bar-list {
             list-style: none;
+
             @include breakpoint(sm) {
                 display: none;
             }
+
             li {
                 font-family: var(--mt-ff-body);
                 display: inline-flex;
                 align-items: center;
                 font-size: 14px;
                 color: var(--mt-color-grey-3);
+
                 &:not(:last-of-type) {
                     margin-right: 60px;
-                    @include breakpoint(md){
+
+                    @include breakpoint(md) {
                         margin-right: 30px;
                     }
                 }
-                i{
+
+                i {
                     margin-top: -2px;
                     margin-right: 10px;
                 }
             }
         }
+
         .top-btn-list {
             list-style: none;
+
             li {
                 display: inline-flex;
+
                 &:not(:last-of-type) {
                     padding-right: 5px;
+
                     &:after {
                         content: "/";
                         color: var(--mt-color-grey-3);
                         right: -5px;
                     }
                 }
+
                 a {
                     font-family: var(--mt-ff-body);
                     font-size: 14px;
                     color: var(--mt-color-grey-3);
                     padding-right: 5px;
+
                     &:hover {
                         color: var(--mt-color-theme-primary);
                     }
@@ -873,33 +1015,41 @@ START: Theme Header CSS
             }
         }
     }
+
     .primary-header-inner {
         background-color: transparent;
         padding: 0;
-        @include breakpoint(sm){
+
+        @include breakpoint(sm) {
             padding: 20px 0;
         }
+
         .header-menu-wrap {
             .sub-menu {
                 li {
                     a {
                         color: var(--mt-color-common-white);
                         padding: 42px 0;
+
                         &:hover {
                             color: var(--mt-color-theme-primary);
                         }
+
                         &:before {
                             bottom: 40px;
                         }
                     }
+
                     ul {
                         top: 110px;
                     }
                 }
+
                 .menu-item-has-children {
                     &:after {
                         color: var(--mt-color-common-white);
                     }
+
                     &:hover {
                         &:after {
                             color: var(--mt-color-theme-primary);
@@ -908,31 +1058,37 @@ START: Theme Header CSS
                 }
             }
         }
+
         .header-right {
             .sidebar-trigger {
                 background-color: var(--mt-color-theme-secondary);
+
                 span {
                     background-color: var(--mt-color-heading-primary);
                 }
             }
         }
     }
-    @include breakpoint(md){
-        .header-container{
+
+    @include breakpoint(md) {
+        .header-container {
             padding: 0;
         }
-        .top-bar{
+
+        .top-bar {
             background-color: var(--mt-color-common-black);
             padding: 20px 15px;
             border-bottom: 1px solid #222;
         }
-        .primary-header-inner{
+
+        .primary-header-inner {
             background-color: var(--mt-color-common-black);
             padding: 20px 15px;
             border-radius: 0;
-            .header-right{
-                .header-right-item{
-                    .mobile-side-menu-toggle{
+
+            .header-right {
+                .header-right-item {
+                    .mobile-side-menu-toggle {
                         color: var(--mt-color-common-white);
                     }
                 }
@@ -941,27 +1097,31 @@ START: Theme Header CSS
     }
 }
 
-.header-4{
-    .top-bar{
+.header-4 {
+    .top-bar {
         background-color: var(--mt-color-theme-primary);
         padding: 0 20px;
         border-bottom: none;
-        .top-bar-inner{
+
+        .top-bar-inner {
             border-bottom: 0;
-            .top-bar-list{
-                li{
+
+            .top-bar-list {
+                li {
                     color: var(--mt-color-common-white);
                 }
             }
-            .top-btn-list{
-                li{
-                    &:after{
+
+            .top-btn-list {
+                li {
+                    &:after {
                         color: var(--mt-color-common-white);
                     }
-                    a{
+
+                    a {
                         color: var(--mt-color-common-white);
                     }
-                } 
+                }
             }
         }
     }

@@ -28,6 +28,7 @@ START: Home 5 css
                 font-size: 42px;
                 line-height: 52px;
             }
+
             @include breakpoint(sm) {
                 font-size: 27px;
                 line-height: 37px;
@@ -1331,4 +1332,38 @@ START: Home 5 css
             }
         }
     }
+}
+
+/* Native select border remove */
+.hosting-search-7__select select {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent;
+}
+
+/* Focus state remove */
+.hosting-search-7__select select:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Nice-select plugin border remove */
+.hosting-search-7__select .nice-select {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Nice-select focus / active remove */
+.hosting-search-7__select .nice-select:focus,
+.hosting-search-7__select .nice-select.open {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Dropdown arrow area border remove (sometimes culprit) */
+.hosting-search-7__select .nice-select::after {
+    border: none !important;
 }
