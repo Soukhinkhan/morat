@@ -19,11 +19,12 @@
 /**----------------------------------------
 START: Theme Default CSS
 ----------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&family=Rubik:wght@400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --mt-ff-body: 'Rubik', sans-serif;
   --mt-ff-heading: 'Poppins', serif;
-  --mt-ff-p: 'Rubik', sans-serif;
+  --mt-ff-heading-2: 'Inter Tight' sans-serif;
+  --mt-ff-p: 'Inter', sans-serif;
   --mt-fw-normal: normal;
   --mt-fw-thin: 100;
   --mt-fw-elight: 200;
@@ -583,6 +584,12 @@ ul {
   padding: 0 15px;
 }
 
+.container-3 {
+  max-width: 1550px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .bd-bottom {
   border-bottom: 1px solid #edebf9;
 }
@@ -1014,6 +1021,33 @@ textarea:focus {
   padding: 11px 30px;
 }
 
+.section-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+.section-heading .subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(3, 6, 17, 0.7);
+  margin-bottom: 7px;
+}
+.section-heading .title {
+  font-family: var(--mt-ff-heading-2);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
+  color: #010915;
+}
+@media only screen and (max-width: 767px) {
+  .section-heading .title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
 /**
     Buttons CSS
 */
@@ -1377,6 +1411,27 @@ START: Theme Header CSS
   .header .primary-header-inner .header-right {
     width: 100%;
   }
+}
+.header.header-6 .primary-header .primary-header-inner {
+  border-radius: 43.5px;
+  padding: 0 40px;
+}
+.header.header-6 .primary-header .header-right .sign-btn {
+  font-family: var(--mt-ff-heading);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #030611;
+}
+.header.header-6 .primary-header .header-right .sign-btn i {
+  font-size: 18px;
+  margin-right: 4px;
+}
+.header.header-6 .primary-header .header-right .header-btn {
+  padding: 9px 25.5px;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 992px) {
@@ -9598,6 +9653,217 @@ START: Home 5 css
   border: none !important;
 }
 
+/**----------------------------------------
+START: Home 6 css
+----------------------------------------*/
+.blog-6__item {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1), 0px 4px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+}
+.blog-6__meta ul li a {
+  background: linear-gradient(180deg, #030611 0%, #3E3F41 100%);
+  border-radius: 100px;
+}
+.blog-6__title {
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  color: #030611;
+}
+.blog-6__dec {
+  font-family: "Inter Tight";
+}
+.sponsor-section-6 {
+  padding: 72px 70px 100px 70px;
+}
+@media (max-width: 1170px) {
+  .sponsor-section-6 {
+    padding: 72px 20px 100px 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .sponsor-section-6 {
+    padding: 72px 20px 70px 20px;
+  }
+}
+.sponsor-section-6 .sponsor-section-bg .heading {
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  color: #010915;
+  text-align: center;
+}
+
+.productivity-section .productivity-item {
+  background: #FFFFFF;
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding-bottom: 10px;
+}
+.productivity-section .productivity-item .thumb {
+  margin: 0 auto;
+}
+.productivity-section .productivity-item .thumb img {
+  width: auto;
+}
+.productivity-section .productivity-item .content {
+  background: #F1F1F1;
+  border-radius: 20px;
+  text-align: center;
+  padding: 22px 0 20px 0;
+  margin: 0 15px 0 15px;
+}
+@media (max-width: 1170px) {
+  .productivity-section .productivity-item .content {
+    padding: 22px 10px 20px 10px;
+  }
+}
+.productivity-section .productivity-item .content .title {
+  margin-bottom: 5px;
+}
+.productivity-section .productivity-item .content .title a {
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  color: #030611;
+  transition: all 0.3s ease-in-out;
+}
+.productivity-section .productivity-item .content .title a:hover {
+  color: #0030AD;
+}
+.productivity-section .productivity-item .content .dec {
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(3, 6, 17, 0.7);
+  margin-bottom: 0;
+}
+@media (max-width: 1170px) {
+  .productivity-section .productivity-item .content .dec br {
+    display: none;
+  }
+}
+
+.service-section-6 .service-section-6-wrap {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.service-section-6 .service-section-6-wrap .service-section-6-item-2 {
+  border-right: 0 !important;
+}
+.service-section-6 .service-section-6-wrap .service-section-6-item {
+  padding: 40px 30px;
+  border-right: 1px solid rgba(3, 6, 17, 0.1);
+}
+.service-section-6 .service-section-6-wrap .service-section-6-item .icon-wrap {
+  width: 70px;
+  height: 70px;
+  background: #F3F2F2;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-section-6 .service-section-6-wrap .service-section-6-item .icon-wrap .icon {
+  width: 58.33px;
+  height: 58.33px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-section-6 .service-section-6-wrap .service-section-6-item .icon-wrap .icon img {
+  width: auto;
+}
+.service-section-6 .service-section-6-wrap .service-section-6-item .title {
+  margin-top: 25px;
+  margin-bottom: 7px;
+}
+.service-section-6 .service-section-6-wrap .service-section-6-item .title a {
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  color: #010915;
+  transition: all 0.3s ease-in-out;
+}
+.service-section-6 .service-section-6-wrap .service-section-6-item .title a:hover {
+  color: #0030AD;
+}
+.service-section-6 .service-section-6-wrap .service-section-6-item .dec {
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(1, 9, 21, 0.7);
+  margin-bottom: 0;
+  margin-bottom: 30px;
+}
+.service-section-6 .service-section-6-wrap .service-section-6-item .service-section-6-btn {
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #010915;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.service-section-6 .service-section-6-wrap .service-section-6-item .service-section-6-btn:hover {
+  color: #0030AD;
+}
+.service-section-6 .service-section-6-wrap .service-section-6-item .service-section-6-btn:hover i {
+  background: #0030AD;
+  transform: rotate(-45deg);
+}
+.service-section-6 .service-section-6-wrap .service-section-6-item .service-section-6-btn i {
+  width: 36px;
+  height: 36px;
+  background: #030611;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.service-section-6 .service-section-6-wrap-2 {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top: 0;
+}
+
+/**----------------------------------------
+START: Home 7 css
+----------------------------------------*/
+/**----------------------------------------
+START: Home 8 css
+----------------------------------------*/
+/**----------------------------------------
+START: Home 9 css
+----------------------------------------*/
+/**----------------------------------------
+START: Home 10 css
+----------------------------------------*/
 /**----------------------------------------
 START: Theme Web CSS
 ----------------------------------------*/

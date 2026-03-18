@@ -514,10 +514,17 @@ ul {
 // Container Class
 .container {
     max-width: 1194px;
+
 }
 
 .container-2 {
     max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-3 {
+    max-width: 1550px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -926,5 +933,34 @@ textarea {
         font-size: 16px;
         font-weight: 600;
         padding: 11px 30px;
+    }
+}
+
+//section heading
+.section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+
+    .subtitle {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: rgba(3, 6, 17, 0.7);
+        margin-bottom: 7px;
+    }
+
+    .title {
+        font-family: var(--mt-ff-heading-2);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 60px;
+        color: #010915; 
+
+        @include breakpoint(sm) {
+            font-size: 32px;
+            line-height: 42px;
+        }
     }
 }

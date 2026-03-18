@@ -202,6 +202,36 @@
         },
     });
 
+    var swiperSponsor = new Swiper(".sponsor-carousel-6", {
+        slidesPerView: 45,
+        spaceBetween: 50,
+        slidesPerGroup: 1,
+        loop: true,
+        autoplay: true,
+        grabcursor: true,
+        speed: 400,
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+                slidesPerGroup: 1,
+                spaceBetween: 25,
+            },
+            767: {
+                slidesPerView: 4,
+                slidesPerGroup: 1,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 5,
+                slidesPerGroup: 1,
+            },
+            1200: {
+                slidesPerView: 7,
+                slidesPerGroup: 1,
+            },
+        },
+    });
+
     // Testimonial Carousel
     var testimonialThumb = new Swiper(".thumb-carousel", {
         slidesPerView: 1,
@@ -550,7 +580,7 @@
                 slidesPerView: 2,
             },
             1200: {
-                slidesPerView: 4, 
+                slidesPerView: 4,
             },
         },
     });
