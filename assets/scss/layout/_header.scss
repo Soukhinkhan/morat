@@ -351,54 +351,6 @@ START: Theme Header CSS
             }
         }
     }
-
-    &.header-6 {
-        .primary-header {
-            .primary-header-inner {
-                border-radius: 43.5px;
-                padding: 0 40px;
-
-                .header-logo {}
-            }
-
-            .header-menu-wrap {
-                .sub-menu {
-                    li {
-                        a {
-                            // padding: 30px 0;
-                            // color: #797B7D;
-
-                            // &::before {
-                            //     bottom: 33px;
-                            // }
-                        }
-                    }
-                }
-            }
-
-            .header-right {
-                .sign-btn {
-                    font-family: var(--mt-ff-heading);
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 19px;
-                    color: #030611;
-
-                    i {
-                        font-size: 18px;
-                        margin-right: 4px;
-                    }
-                }
-
-                .header-btn {
-                    padding: 9px 25.5px;
-                    font-size: 16px;
-                    font-weight: 700;
-                }
-            }
-        }
-    }
 }
 
 @include breakpoint(md) {
@@ -1140,6 +1092,60 @@ START: Theme Header CSS
                         color: var(--mt-color-common-white);
                     }
                 }
+            }
+        }
+    }
+}
+
+.header-6 {
+    top: 20px;
+
+    .primary-header-inner {
+        border-radius: 43px;
+
+        .header-menu-wrap {
+            .sub-menu {
+                li {
+                    a {
+                        color: #797B7D;
+                        padding: 30px 0;
+
+                        &:before {
+                            bottom: 30px;
+                        }
+                    }
+
+                    ul {
+                        top: 88px;
+                    }
+                }
+                .menu-item-has-children {
+                    &::after {
+                        color: #797B7D;
+                    }
+                }
+            }
+        }
+
+        .header-right {
+            .sign-btn {
+                font-family: 'Urbanist';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: #030611;
+            }
+
+            .mt-primary-btn {
+                background-color: #0030AD;
+                padding: 12.5px 30px;
+                font-family: 'Urbanist';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
             }
         }
     }

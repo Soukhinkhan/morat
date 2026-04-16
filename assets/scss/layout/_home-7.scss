@@ -3,3 +3,177 @@
 /**----------------------------------------
 START: Home 7 css
 ----------------------------------------*/
+
+//home-7-footer
+.home-7-footer {
+    background: #050520;
+    .footer-7__area-common {
+        background: #0F102A;
+        border-radius: 40px 40px 0px 0px;
+    }
+
+    &__contact {
+        p {
+            font-family: 'Inter Tight';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgb(255 255 255 / 70%);
+        }
+
+        span {
+            color: #CECECE;
+        }
+
+        a {
+            color: #fff;
+        }
+    }
+
+    &__link {
+        ul {
+            li {
+                a {
+                    color: rgb(255 255 255 / 70%);
+
+                    i {
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+
+    &__widget {
+        .footer-4__widget-title {
+            .title-footer {
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .newsletters-des {
+        color: #FFFFFF;
+    }
+
+    &__form {
+        .rr-btn__theme-7 {
+            background: linear-gradient(113.96deg, #B26EF7 0%, #FF71BF 46.5%, #FFBD7A 100%);
+        }
+    }
+
+    &__copyright {
+        background: #0F102A;
+        border-top: 1px solid rgb(255 255 255 / 10%);
+        border-bottom: 1px solid rgb(255 255 255 / 10%);
+        border-radius: 0;
+
+        p {
+            color: rgb(255 255 255 / 70%);
+        }
+    }
+}
+
+//home-7-blog
+.home-7-blog {
+    background: #050520;
+    border-radius: 0;
+
+    .section-heading {
+        .subtitle {
+            font-family: 'Inter Tight';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: rgb(255 255 255 / 50%);
+        }
+
+        .title {
+            font-family: 'Inter Tight';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 56px;
+            letter-spacing: -0.02em;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+    }
+
+    &__item {
+        background: #0F102A;
+        padding: 20px;
+    }
+
+    &__thumb {}
+
+    &__content {
+        padding-left: 10px;
+        padding-right: 12px;
+        padding-bottom: 10px;
+    }
+
+    &__meta {
+        ul {
+            li {
+                a {}
+            }
+        }
+    }
+
+    &__title {
+        color: #FFFFFF;
+        font-family: 'Inter Tight';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+
+        a {
+            color: #FFFFFF;
+            font-family: 'Inter Tight';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 38px;
+        }
+    }
+
+    &__dec {
+        color: rgb(255 255 255 / 60%);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 20px;
+    }
+
+    &__author {
+        &__thumb {
+            img {}
+        }
+
+        &__text {}
+
+        &__name {
+            a {
+                color: #FFFFFF;
+            }
+        }
+
+        &__date {
+            .date-1 {
+                color: rgb(255 255 255 / 60%);
+
+                &:not(:last-child) {
+                    &::after {
+                        background: #FFFFFF;
+                    }
+                }
+            }
+
+            .date-2 {
+                color: rgb(255 255 255 / 60%);
+            }
+        }
+    }
+}
