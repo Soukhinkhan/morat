@@ -81,6 +81,8 @@ START: Home 6 css
             line-height: 34px;
             color: #010915;
             text-align: center;
+            margin-bottom: 30px;
+
         }
     }
 }
@@ -198,7 +200,7 @@ START: Home 6 css
                     font-family: 'Inter Tight';
                     font-style: normal;
                     font-weight: 500;
-                    font-size: 24px;
+                    font-size: 23px;
                     line-height: 34px;
                     color: #010915;
                     transition: all 0.3s ease-in-out;
@@ -218,6 +220,12 @@ START: Home 6 css
                 color: rgb(1 9 21 / 70%);
                 margin-bottom: 0;
                 margin-bottom: 30px;
+
+                @include breakpoint(lg) {
+                    br {
+                        display: none;
+                    }
+                }
             }
 
             .service-section-6-btn {
@@ -271,6 +279,18 @@ START: Home 6 css
     position: relative;
     padding: 320px 0 243px 0;
 
+    @include breakpoint(lg) {
+        padding: 240px 0 240px 0;
+    }
+
+    @include breakpoint(md) {
+        padding: 130px 0 130px 0;
+    }
+
+    @include breakpoint(sm) {
+        padding: 80px 0 80px 0;
+    }
+
     &::before {
         position: absolute;
         content: '';
@@ -281,8 +301,87 @@ START: Home 6 css
         background: #08395D;
     }
 
+    .shapes {
+        .shape-1 {
+            position: absolute;
+            width: 1168px;
+            height: 1168px;
+            left: -756px;
+            top: 255px;
+            background: #88CCFF;
+            filter: blur(445px);
+        }
+
+        .shape-2 {
+            position: absolute;
+            width: 1148px;
+            height: 1589px;
+            left: 1423px;
+            bottom: 301px;
+            background: #88CCFF;
+            filter: blur(445px);
+        }
+
+        .shape-3 {
+            position: absolute;
+            left: 781px;
+            bottom: 26px;
+            z-index: 1;
+
+            @include breakpoint(xxl) {
+                left: 250px;
+            }
+
+            @include breakpoint(lg) {
+                left: 150px;
+            }
+
+            @include breakpoint(md) {
+                display: none;
+            }
+        }
+
+        .shape-4 {
+            position: absolute;
+            right: 163px;
+            bottom: 56px;
+            z-index: 1;
+
+            @include breakpoint(xxl) {
+                right: 163px;
+            }
+
+            @include breakpoint(lg) {
+                right: 70px;
+            }
+
+            @include breakpoint(md) {
+                display: none;
+            }
+        }
+
+        .shape-5 {
+            position: absolute;
+            right: 95px;
+            bottom: -47px;
+            z-index: 1;
+
+            @include breakpoint(xxl) {
+                right: 95px;
+            }
+
+            @include breakpoint(md) {
+                display: none;
+            }
+        }
+    }
+
     .hero-img-wrap {
         top: calc(50% + -25px);
+
+        @include breakpoint(md) {
+            display: none;
+        }
     }
 
     .hero-content {
@@ -294,6 +393,27 @@ START: Home 6 css
             line-height: 80px;
             text-transform: capitalize;
             color: #FFFFFF;
+
+            @include breakpoint(xxl) {
+                font-size: 50px;
+                line-height: 60px;
+            }
+
+            @include breakpoint(lg) {
+                font-size: 43px;
+                line-height: 53px;
+            }
+
+            @include breakpoint(md) {
+                br {
+                    display: none;
+                }
+            }
+
+            @include breakpoint(sm) {
+                font-size: 28px;
+                line-height: 38px;
+            }
         }
 
         .dec {
@@ -306,6 +426,21 @@ START: Home 6 css
             border-bottom: 0;
             position: relative;
 
+            @include breakpoint(xxl) {
+                br {
+                    display: none;
+                }
+            }
+
+            @include breakpoint(md) {
+                max-width: 100%;
+                width: 100%;
+
+                br {
+                    display: none;
+                }
+            }
+
             &::before {
                 position: absolute;
                 background: rgba(255, 255, 255, 0.1);
@@ -314,6 +449,10 @@ START: Home 6 css
                 left: 0;
                 height: 1px;
                 width: 630px;
+
+                @include breakpoint(md) {
+                    width: 100%;
+                }
             }
         }
 
@@ -443,6 +582,62 @@ START: Home 6 css
             }
         }
     }
+
+    &__button {
+        gap: 70px;
+        justify-content: center !important;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50px;
+        padding: 10px;
+        max-width: 250px;
+        margin: 50px auto 0 auto;
+    }
+
+    &__button-arrow {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        font-size: 18px;
+        transition: all 0.3s ease;
+        background: linear-gradient(270deg, #030611 0%, #3E3F41 100%);
+        border-radius: 50px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        color: #FFFFFF;
+        transition: all 0.3s ease-in-out;
+
+        i {
+            font-size: 20px;
+        }
+
+        &:hover {
+            background: linear-gradient(360deg, #6000FF 0%, #3A0099 100%);
+        }
+
+        &-prev {
+            background-color: #1c1e22;
+            color: #fff;
+            border: none;
+
+
+            &:hover {
+                background: linear-gradient(360deg, #6000FF 0%, #3A0099 100%);
+            }
+        }
+
+        &-next {
+            background-color: #4a10e6;
+            color: #fff;
+            border: none;
+
+            &:hover {
+                background: linear-gradient(360deg, #6000FF 0%, #3A0099 100%)
+            }
+        }
+    }
 }
 
 //card-control
@@ -503,6 +698,16 @@ START: Home 6 css
             justify-content: space-between;
             padding: 30px;
 
+            @include breakpoint(xl) {
+                max-width: 364px;
+            }
+
+            @include breakpoint(lg) {
+                max-width: 295px;
+                flex-wrap: wrap;
+                row-gap: 10px;
+            }
+
             .text-wrap {
                 .dec {
                     font-style: normal;
@@ -525,6 +730,7 @@ START: Home 6 css
                 align-items: center;
                 justify-content: center;
                 transition: all 0.3s ease-in-out;
+                color: #030611;
 
                 &:hover {
                     background: linear-gradient(180deg, #6000FF 0%, #3A0099 100%);
@@ -535,16 +741,84 @@ START: Home 6 css
     }
 
     &__content {
+        padding-left: 35px;
+
         .count-wrap {
+            border-top: 1px solid rgba(3, 6, 17, 0.2);
+            display: flex;
+            gap: 35px;
+            flex-wrap: wrap;
+            row-gap: 10px;
+            margin-top: 60px;
+
+            @include breakpoint(xl) {
+                margin-top: 20px;
+            }
+
             .count-item {
+                padding-top: 25px;
+
+                @include breakpoint(xl) {
+                    padding-top: 20px;
+                }
+
+                @include breakpoint(lg) {
+                    padding-top: 0;
+                }
+
                 .title {
+                    font-family: 'Inter Tight';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 50px;
+                    line-height: 60px;
+                    color: #010915;
+                    margin-bottom: 0;
 
+                    span {
+                        font-family: 'Inter Tight';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 50px;
+                        line-height: 60px;
+                        color: #010915;
+                    }
                 }
+
                 .subtitle {
-
+                    font-family: 'Inter Tight';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: rgba(1, 9, 21, 0.8);
+                    margin-bottom: 16px;
                 }
+
                 .dec {
-                    
+                    font-family: 'Inter Tight';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #010915;
+                    margin-bottom: 0;
+                }
+            }
+
+            .count-item-1 {
+                padding-top: 25px;
+                padding-left: 32px;
+                border-left: 1px solid rgba(3, 6, 17, 0.2);
+
+                @include breakpoint(xl) {
+                    padding-top: 20px;
+                    padding-left: 0;
+                    border-left: 0;
+                }
+
+                @include breakpoint(lg) {
+                    padding-top: 0;
                 }
             }
         }
@@ -570,6 +844,16 @@ START: Home 6 css
         line-height: 60px;
         color: #010915;
         margin-bottom: 16px;
+
+        @include breakpoint(xl) {
+            font-size: 36px;
+            line-height: 46px;
+        }
+
+        @include breakpoint(sm) {
+            font-size: 28px;
+            line-height: 38px;
+        }
     }
 
     &__btn {
@@ -584,9 +868,17 @@ START: Home 6 css
         display: inline-flex;
         align-items: center;
         gap: 14px;
-        padding: 5px 5px 5px 20px;
+        padding: 9px 8px 9px 26px;
         transition: all 0.3s ease-in-out;
         margin-top: 42px;
+
+        @include breakpoint(xl) {
+            margin-top: 20px;
+        }
+
+        &:focus {
+            color: #FFFFFF;
+        }
 
         i {
             width: 40px;
@@ -597,6 +889,17 @@ START: Home 6 css
             align-items: center;
             justify-content: center;
             transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+//footer-6
+.footer-6 {
+    &__copyright {
+        margin-top: 50px;
+
+        @include breakpoint(md) {
+            margin-top: 0;
         }
     }
 }

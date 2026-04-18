@@ -608,8 +608,12 @@
                 slidesPerView: 5,
             },
         },
+        navigation: {
+            nextEl: ".testimonial-6-next",
+            prevEl: ".testimonial-6-prev",
+        },
     });
-    
+
     // testi-10-active testi
     var testimonial_3_active = new Swiper(".testi-10-active", {
         slidesPerView: 4,

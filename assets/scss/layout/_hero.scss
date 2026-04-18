@@ -33,10 +33,6 @@ START: Theme Hero CSS
         @include breakpoint(lg) {
             font-size: 40px;
         }
-        @include breakpoint(md) {
-            max-width: 500px;
-            width: 100%;
-        }
         @include breakpoint(sm) {
             font-size: 30px;
         }
@@ -82,7 +78,7 @@ START: Theme Hero CSS
     width: 860px;
     height: 675px;
     position: absolute;
-    left: 50%;
+    left: 44%;
     top: calc(50% + 65px);
     @include transform(translateY(-50%));
     @include breakpoint(xxxl) {

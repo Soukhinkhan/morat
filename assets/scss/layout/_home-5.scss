@@ -89,6 +89,10 @@ START: Home 5 css
     border-radius: 40px 40px 0px 0px;
 
     @include breakpoint(md) {
+        padding-bottom: 0;
+    }
+
+    @include breakpoint(md) {
         padding-top: 100px;
     }
 
@@ -132,7 +136,12 @@ START: Home 5 css
 
         .footer-4__widget-title {
             .title-footer {
-                margin-bottom: 24px;
+                font-family: 'Inter Tight';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+                margin-bottom: 28px;
             }
         }
 
@@ -161,7 +170,11 @@ START: Home 5 css
 
         &.footer-7__widget-item-4 {
             margin-top: 17px;
+            padding-left: 38px;
 
+            @include breakpoint(xl) {
+                padding-left: 0px;
+            }
         }
 
         &-title {
@@ -243,8 +256,9 @@ START: Home 5 css
             list-style: none;
 
             li {
-                font-size: 15px;
-                font-weight: 400;
+                font-family: 'Inter Tight';
+                font-size: 16px;
+                font-weight: 500;
                 line-height: 30px;
                 font-style: normal;
                 position: relative;
@@ -255,8 +269,9 @@ START: Home 5 css
                 }
 
                 a {
-                    font-weight: 400;
-                    font-size: 15px;
+                    font-family: 'Inter Tight';
+                    font-weight: 500;
+                    font-size: 16px;
                     line-height: 30px;
                     display: flex;
                     align-items: center;
@@ -340,8 +355,13 @@ START: Home 5 css
     }
 
     .newsletters-des {
-        color: #030611;
-        opacity: 0.7;
+        font-family: 'Inter Tight';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgb(3 6 17 / 70%);
+        margin-bottom: 22px;
     }
 
     &__newsletters {
@@ -360,6 +380,8 @@ START: Home 5 css
     }
 
     &__form {
+        max-width: 370px;
+
         & input {
             background: #FFFFFF;
             border-radius: 100px;

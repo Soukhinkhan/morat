@@ -699,6 +699,7 @@ ul {
             font-size: 60px;
             line-height: 70px;
         }
+
         @include breakpoint(sm) {
             font-size: 28px;
             line-height: 38px;
@@ -909,6 +910,7 @@ textarea {
     }
 
     .title {
+        font-family: 'Inter Tight';
         font-style: normal;
         font-weight: 600;
         font-size: 50px;
@@ -979,19 +981,21 @@ textarea {
     .subtitle {
         font-style: normal;
         font-weight: 500;
-        font-size: 15px;
+        font-size: 18px;
         line-height: 18px;
-        color: rgba(3, 6, 17, 0.7);
-        margin-bottom: 7px;
+        color: rgba(3, 6, 17, 0.8);
+        margin-bottom: 14px;
     }
 
     .title {
+
         font-family: var(--mt-ff-heading-2);
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 50px;
         line-height: 60px;
         color: #010915;
+        letter-spacing: -2px;
 
         @include breakpoint(sm) {
             font-size: 32px;

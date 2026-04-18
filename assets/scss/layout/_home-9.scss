@@ -1505,6 +1505,7 @@ START: Home 9 css
 //progress-9
 .progress-9 {
     background-color: #E9E9ED;
+
     &__item {
         background: #FFFFFF;
         border: 1px solid #E9E9ED;
@@ -1513,12 +1514,15 @@ START: Home 9 css
         padding: 30px 5px 5px 5px;
         overflow: hidden;
         transition: all 0.3s ease-in-out;
+
         &:hover {
             .content {
                 background: #E0AFFF;
+
                 p {
                     color: #1E1B4B;
                 }
+
                 .skill {
                     .progress {
                         .progress-bar {
@@ -1556,8 +1560,9 @@ START: Home 9 css
             border-radius: 10px;
             padding: 17px 25px 30px 25px;
             margin-top: 30px;
-            transition: all 0.3s ease-in-out; 
+            transition: all 0.3s ease-in-out;
             overflow: hidden;
+
             p {
                 font-family: 'Inter Tight';
                 font-style: normal;
@@ -1605,7 +1610,7 @@ START: Home 9 css
                             @include breakpoint(sm) {
                                 font-size: 14px;
                                 padding-top: 20px;
-                                top: -35px; 
+                                top: -35px;
                             }
                         }
                     }
@@ -1614,5 +1619,172 @@ START: Home 9 css
 
 
         }
+    }
+}
+
+//hero 9
+.hero-9 {
+    position: relative;
+    padding: 183px 0 160px 0;
+
+    &::before {
+        background: #3B0000;
+    }
+
+    &__shapes {
+        &-shape-1 {
+            position: absolute;
+            top: 90px;
+            left: 303px;
+        }
+
+        &-shape-2 {
+            position: absolute;
+            width: 1168px;
+            height: 1168px;
+            left: -756px;
+            top: 248px;
+            background: #FF0000;
+            filter: blur(445px);
+        }
+
+        &-shape-3 {
+            position: absolute;
+            width: 1148px;
+            height: 1589px;
+            left: 1423px;
+            top: -890px;
+            background: #FF0000;
+            filter: blur(445px);
+        }
+
+        &-shape-4 {
+            position: absolute;
+            bottom: 60px;
+            right: 0;
+        }
+
+        &-shape-5 {
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 14px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+            border: 1px solid #FFFFFF;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+
+        .subtitle {
+            font-family: 'Inter Tight';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.5em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            opacity: 0.7;
+            margin-bottom: 280px;
+        }
+
+        .section-title {
+            font-family: 'Inter Tight';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 70px;
+            letter-spacing: -0.02em;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            margin-bottom: 30px;
+        }
+
+        .dec {
+            font-family: 'Inter Tight';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            color: rgb(255 255 255 / 80%); 
+            margin-bottom: 0;
+        }
+
+        .mt-primary-btn {
+            margin-top: 42px;
+            background-color: #FFFFFF;
+            font-family: 'Inter Tight';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #030611;
+            display: inline-flex;
+            padding: 14.5px 40px;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 5px 5px 20px;
+
+            &:hover {
+                color: #FFFFFF;
+            }
+
+
+            i {
+                width: 40px;
+                height: 40px;
+                background: #030611;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    &__right-content {
+        position: relative;
+        padding-left: 10px;
+
+        .dec {
+            font-family: 'Inter Tight';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            color: #FFFFFF;
+            margin-bottom: 0;
+        }
+    }
+}
+
+//header-9
+.header-9 {
+    .primary-header-inner {
+        background-color: transparent;
+        padding: 0;
+        border-radius: 0;
     }
 }
