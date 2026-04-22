@@ -511,14 +511,8 @@ START: Home 9 css
     }
 }
 
-.about-wrap-2 {
-    margin-top: 100px;
+.about-wrap-2 { 
     align-items: center;
-
-
-    @include breakpoint(sm) {
-        margin-top: 50px;
-    }
 
     .about-counter-items {
         padding-left: 202px;
@@ -608,16 +602,18 @@ START: Home 9 css
 }
 
 .about-img-2 {
-    height: 100%;
+    height: 530px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
     max-width: 100%;
-    margin-right: -96px;
+    text-align: left;
 
     @include breakpoint(xl) {
         margin-right: 0;
     }
 
     img {
-        width: 100%;
         height: 100%;
         object-fit: cover;
     }
@@ -1627,6 +1623,10 @@ START: Home 9 css
     position: relative;
     padding: 183px 0 160px 0;
 
+    @include breakpoint(md) {
+        padding: 160px 0 120px 0;
+    }
+
     &::before {
         background: #3B0000;
     }
@@ -1636,6 +1636,11 @@ START: Home 9 css
             position: absolute;
             top: 90px;
             left: 303px;
+            z-index: 1;
+
+            @include breakpoint(xxl) {
+                display: none;
+            }
         }
 
         &-shape-2 {
@@ -1686,6 +1691,7 @@ START: Home 9 css
             justify-content: center;
             border-radius: 50%;
             transition: all 0.3s ease-in-out;
+
             &:hover {
                 color: rgba(255, 255, 255, 0.5);
             }
@@ -1706,6 +1712,16 @@ START: Home 9 css
             color: #FFFFFF;
             opacity: 0.7;
             margin-bottom: 280px;
+
+            @include breakpoint(md) {
+                margin-bottom: 40px;
+            }
+
+            @media only screen and (max-width: 500px) {
+                margin-bottom: 10px;
+                font-size: 11px;
+            }
+
         }
 
         .section-title {
@@ -1718,6 +1734,18 @@ START: Home 9 css
             text-transform: capitalize;
             color: #FFFFFF;
             margin-bottom: 30px;
+
+            @include breakpoint(md) {
+                br {
+                    display: none;
+                }
+            }
+
+            @media only screen and (max-width: 500px) {
+                font-size: 45px;
+                line-height: 55px;
+                margin-bottom: 10px;
+            }
         }
 
         .dec {
@@ -1726,8 +1754,14 @@ START: Home 9 css
             font-weight: 500;
             font-size: 16px;
             line-height: 26px;
-            color: rgb(255 255 255 / 80%); 
+            color: rgb(255 255 255 / 80%);
             margin-bottom: 0;
+
+            @include breakpoint(md) {
+                br {
+                    display: none;
+                }
+            }
         }
 
         .mt-primary-btn {
@@ -1748,6 +1782,10 @@ START: Home 9 css
 
             &:hover {
                 color: #FFFFFF;
+            }
+
+            @media only screen and (max-width: 500px) {
+                margin-top: 20px;
             }
 
 

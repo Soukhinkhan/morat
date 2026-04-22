@@ -53,7 +53,7 @@
     //Mobile Menu Js
     $(".mobile-menu-items").meanmenu({
         meanMenuContainer: ".side-menu-wrap",
-        meanScreenWidth: "991",
+        meanScreenWidth: "2000",
         meanMenuCloseSize: "30px",
         meanRemoveAttrs: true,
         meanExpand: ['<i class="fa-solid fa-caret-down"></i>'],
@@ -531,39 +531,68 @@
         },
     });
 
-    // testimonial-active 5
-    // var testimonial_3_active = new Swiper(".testimonial-active", {
-    //     slidesPerView: 3.5,
-    //     spaceBetween: 24,
-    //     loop: true,
-    //     autoplay: true,
-    //     speed: 600,
-    //     breakpoints: {
-    //         320: {
-    //             slidesPerView: 1,
-    //             slidesPerGroup: 1,
-    //         },
-    //         767: {
-    //             slidesPerView: 2,
-    //             spaceBetween: 20,
-    //         },
-    //         1024: {
-    //             slidesPerView: 2,
-    //             slidesPerGroup: 1,
-    //         },
-    //         1200: {
-    //             slidesPerView: 2,
-    //             slidesPerGroup: 1,
-    //         },
-    //         1400: {
-    //             slidesPerView: 3.5,
-    //             slidesPerGroup: 1,
-    //         },
-    //     },
-    // });
+
+    //testimonail-8-active
+var testimonial_8_active = new Swiper(".testimonail-8-active", {
+    slidesPerView: 1,
+    loop: true,
+    speed: 800,
+    effect: "creative",
+    watchSlidesProgress: true,
+    grabCursor: true,
+    creativeEffect: {
+        limitProgress: 2,
+        prev: {
+            translate: ["10px", 0, 0],
+        },
+        next: {
+            translate: ["0px", 0, -100],
+            opacity: 1,
+        },
+    },
+    pagination: {
+        el: ".testimonail-8 .swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".testi-8-next",
+        prevEl: ".testi-8-prev",
+    },
+    // autoplay: {
+    //     delay: 3500,
+    //     disableOnInteraction: false,
+    // },
+});
+
+
+
+
+
 
     var testimonial_3_active = new Swiper(".testimonial-active", {
         slidesPerView: 4,   // 🔥 magic value
+        spaceBetween: 24,
+        loop: true,
+        speed: 600,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1200: {
+                slidesPerView: 4,
+            },
+        },
+    });
+    var testimonial_3_active = new Swiper(".project-7-active", {
+        slidesPerView: 4,
         spaceBetween: 24,
         loop: true,
         speed: 600,
@@ -611,6 +640,34 @@
         navigation: {
             nextEl: ".testimonial-6-next",
             prevEl: ".testimonial-6-prev",
+        },
+    });
+
+    // home 7 testi
+    var testimonial_3_active = new Swiper(".testi-7-active", {
+        slidesPerView: 2,   // 🔥 magic value
+        spaceBetween: 30,
+        loop: true,
+        speed: 600,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1200: {
+                slidesPerView: 2,
+            },
+        },
+        navigation: {
+            nextEl: ".testi-7-next",
+            prevEl: ".testi-7-prev",
         },
     });
 
@@ -712,6 +769,8 @@
             });
         }
     });
+
+
 
 
 })(jQuery);
