@@ -12593,6 +12593,11 @@ START: Home 7 css
   opacity: 0.7;
   margin-bottom: 0;
 }
+@media only screen and (max-width: 767px) {
+  .about-7__media-wrap .progress-content .count-item .dec br {
+    display: none;
+  }
+}
 .about-7__media-wrap .progress-content .progress-item {
   text-align: center;
   background: #0F102A;
@@ -12676,6 +12681,11 @@ START: Home 7 css
   opacity: 0.7;
   margin-bottom: 0;
   margin-top: 16px;
+}
+@media only screen and (max-width: 767px) {
+  .about-7__media-wrap .progress-content .progress-item .dec-2 br {
+    display: none;
+  }
 }
 .about-7__media-wrap .thumb {
   width: 100%;
@@ -12942,6 +12952,11 @@ START: Home 7 css
   bottom: 24px;
   z-index: 1;
 }
+@media only screen and (max-width: 992px) {
+  .hero-7__shapes .plus-icon-wrap {
+    bottom: 0;
+  }
+}
 @media (max-width: 575px) {
   .hero-7__shapes .plus-icon-wrap {
     left: 42%;
@@ -13179,6 +13194,11 @@ START: Home 7 css
     line-height: 48px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .hero-7__content .title br {
+    display: none;
+  }
+}
 @media (max-width: 575px) {
   .hero-7__content .title {
     font-size: 32px;
@@ -13194,6 +13214,11 @@ START: Home 7 css
   color: #FFFFFF;
   opacity: 0.7;
   margin-bottom: 0;
+}
+@media only screen and (max-width: 767px) {
+  .hero-7__content .dec br {
+    display: none;
+  }
 }
 @media (max-width: 575px) {
   .hero-7__content .dec {
