@@ -1576,6 +1576,21 @@ START: Home 7 css
             }
         }
 
+        .text {
+            font-family: 'Inter Tight';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-bottom: 0;
+            z-index: 1;
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+        }
+
         &-count-wrap {
             position: absolute;
             bottom: 0;
