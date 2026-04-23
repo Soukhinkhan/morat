@@ -1542,6 +1542,7 @@ START: Home 7 css
             top: 30px;
             left: 30px;
         }
+
         &-bottom-shape {
             position: absolute;
             left: 44%;
@@ -1549,18 +1550,45 @@ START: Home 7 css
             z-index: 1;
         }
 
+        .plus-icon-wrap {
+            background: linear-gradient(139.71deg, rgba(0, 0, 0, 0.4) 19.24%, rgba(255, 255, 255, 0.304) 86.09%);
+            filter: blur(0.5px);
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            position: absolute;
+            left: 49%;
+            bottom: 24px;
+            z-index: 1;
+
+            .plus-icon {
+                width: 58px;
+                height: 58px;
+                background: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                color: #48319D;
+            }
+        }
+
         &-count-wrap {
             position: absolute;
             bottom: 0;
             left: 30px;
             border-radius: 29px;
+
             .count-item {
                 background: #0F102A;
                 border-radius: 29px;
                 position: relative;
                 padding: 30px 43px 30px 30px;
                 overflow: hidden;
-                width: 307px; 
+                width: 307px;
 
                 .count-shape {
                     position: absolute;
@@ -1577,6 +1605,7 @@ START: Home 7 css
                     border-bottom: 1px solid rgb(255 255 255 / 10%);
                     padding-bottom: 27px;
                     margin-bottom: 23px;
+
                     .title {
                         font-family: 'Inter Tight';
                         font-style: normal;
