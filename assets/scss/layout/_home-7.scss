@@ -2032,6 +2032,7 @@ START: Home 7 css
 
         .thumb {
             position: relative;
+            // animation: rotateLeftToRight 8s linear infinite;
 
             @media (max-width: 575px) {
                 width: 100%;
