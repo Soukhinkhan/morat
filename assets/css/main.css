@@ -608,6 +608,12 @@ ul {
   padding: 0 15px;
 }
 
+.container-7 {
+  max-width: 1850px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .bd-bottom {
   border-bottom: 1px solid #edebf9;
 }
@@ -12871,6 +12877,178 @@ START: Home 7 css
   justify-content: center;
   border-radius: 50%;
   color: #030611;
+}
+
+.hero-7 {
+  background-color: #050520;
+  position: relative;
+  padding: 165px 0 133px 0 !important;
+}
+.hero-7::before {
+  background: #050520 !important;
+}
+.hero-7__shapes-shape-1 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.hero-7__shapes-bottom-shape {
+  position: absolute;
+  left: 44%;
+  bottom: 0;
+  z-index: 1;
+}
+.hero-7__shapes-count-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  border-radius: 29px;
+}
+.hero-7__shapes-count-wrap .count-item {
+  background: #0F102A;
+  border-radius: 29px;
+  position: relative;
+  padding: 30px 43px 30px 30px;
+  overflow: hidden;
+  width: 307px;
+}
+.hero-7__shapes-count-wrap .count-item .count-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.hero-7__shapes-count-wrap .count-item .count-logo {
+  margin-bottom: 15px;
+}
+.hero-7__shapes-count-wrap .count-item .content {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 27px;
+  margin-bottom: 23px;
+}
+.hero-7__shapes-count-wrap .count-item .content .title {
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+.hero-7__shapes-count-wrap .count-item .content .title span {
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+.hero-7__shapes-count-wrap .count-item .content .dec {
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #A9B1E0;
+  margin-bottom: 0;
+}
+.hero-7__prefect {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.hero-7__prefect .tag {
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  opacity: 0.7;
+  margin-bottom: 0;
+  padding: 2px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  position: relative;
+  display: inline-flex;
+}
+.hero-7__prefect .tag::before {
+  position: absolute;
+  content: "";
+  width: 260px;
+  height: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  top: 50%;
+  right: -261px;
+}
+.hero-7__prefect .tag-2 {
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  opacity: 0.7;
+  margin-bottom: 0;
+  padding: 2px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  position: relative;
+  display: inline-flex;
+}
+.hero-7__prefect .tag-2::before {
+  position: absolute;
+  content: "";
+  width: 260px;
+  height: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  top: 50%;
+  left: -261px;
+}
+.hero-7__prefect .thumb {
+  position: relative;
+}
+.hero-7__content {
+  position: relative;
+  text-align: center;
+}
+.hero-7__content .title {
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 17px;
+}
+.hero-7__content .dec {
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  opacity: 0.7;
+  margin-bottom: 0;
+}
+
+.header-7 {
+  border-bottom: 0;
+  margin-top: 27px;
+}
+.header-7 .primary-header-inner .header-menu-wrap {
+  padding-left: 225px;
+}
+.header-7 .primary-header-inner .header-right .mt-primary-btn {
+  background: linear-gradient(113.96deg, #B26EF7 0%, #FF71BF 46.5%, #FFBD7A 100%);
+  border-radius: 100px;
+  color: #FFFFFF;
+}
+.header-7 .primary-header-inner .header-right .mt-primary-btn:hover {
+  color: #000000;
 }
 
 /**----------------------------------------
