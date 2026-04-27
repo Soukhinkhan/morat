@@ -6,9 +6,15 @@ START: Theme Sponsor CSS
 
 .sponsor-item {
     text-align: center;
+
     img {
         max-width: 180px;
+
+        @include breakpoint(sm) {
+            max-width: 100%;
+        }
     }
+
     @include breakpoint(md) {
         text-align: center;
     }

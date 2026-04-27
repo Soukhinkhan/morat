@@ -567,13 +567,16 @@ START: Theme Header CSS
         background-color: transparent;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
+
     .header-8 {
         background-color: #0E143E;
         padding: 20px 0;
     }
+
     .header-7 {
         background-color: #050520;
         margin-top: 0;
+        padding-top: 20px;
     }
 }
 
@@ -752,7 +755,8 @@ START: Theme Header CSS
     .mean-bar {
         background-color: transparent;
         min-height: auto;
-        padding: 0; 
+        padding: 0;
+
         .meanmenu-reveal {
             display: none !important;
         }
@@ -1137,6 +1141,13 @@ START: Theme Header CSS
 
     .primary-header-inner {
         border-radius: 43px;
+
+        @include breakpoint(lg) {
+            padding: 0 15px;
+        }
+        @include breakpoint(md) {
+            padding: 20px 15px;
+        }
 
         .header-menu-wrap {
             .sub-menu {

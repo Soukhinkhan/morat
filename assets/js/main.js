@@ -533,36 +533,39 @@
 
 
     //testimonail-8-active
-var testimonial_8_active = new Swiper(".testimonail-8-active", {
-    slidesPerView: 1,
-    loop: true,
-    speed: 800,
-    effect: "creative",
-    watchSlidesProgress: true,
-    grabCursor: true,
-    creativeEffect: {
-        limitProgress: 2,
-        prev: {
-            translate: ["10px", 0, 0],
+    var testimonial_8_active = new Swiper(".testimonail-8-active", {
+        slidesPerView: 1,
+        loop: true,
+        speed: 800,
+        effect: "creative",
+        watchSlidesProgress: true,
+        grabCursor: true,
+        creativeEffect: {
+            limitProgress: 3,
+            prev: {
+                opacity: 0,
+                translate: ["-20%", 0, -200],
+            },
+            next: {
+                // স্লাইডগুলোকে ১০ পিক্সেল ডানে এবং ২০ পিক্সেল নিচে নামানো হয়েছে
+                translate: ["10px", "20px", -100],
+                scale: 0.98, // হালকা স্কেল কমানো হয়েছে যেন ১০ পিক্সেল গ্যাপটি ফুটে ওঠে
+                opacity: 1,
+            },
         },
-        next: {
-            translate: ["0px", 0, -100],
-            opacity: 1,
+        pagination: {
+            el: ".testimonail-8 .swiper-pagination",
+            clickable: true,
         },
-    },
-    pagination: {
-        el: ".testimonail-8 .swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".testi-8-next",
-        prevEl: ".testi-8-prev",
-    },
-    // autoplay: {
-    //     delay: 3500,
-    //     disableOnInteraction: false,
-    // },
-});
+        navigation: {
+            nextEl: ".testi-8-next",
+            prevEl: ".testi-8-prev",
+        },
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
+    });
 
 
 
@@ -593,7 +596,7 @@ var testimonial_8_active = new Swiper(".testimonail-8-active", {
     });
     var testimonial_3_active = new Swiper(".project-7-active", {
         slidesPerView: 4,
-        spaceBetween: 24,
+        spaceBetween: 30,
         loop: true,
         speed: 600,
         autoplay: {
@@ -605,7 +608,7 @@ var testimonial_8_active = new Swiper(".testimonail-8-active", {
             320: {
                 slidesPerView: 1,
             },
-            768: {
+            576: {
                 slidesPerView: 2,
             },
             1200: {

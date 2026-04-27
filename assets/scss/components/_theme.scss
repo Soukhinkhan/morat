@@ -551,6 +551,11 @@ ul {
     margin: 0 auto;
     padding: 0 15px;
 }
+.container-8 {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
 // border-bottom
 .bd-bottom {
@@ -1011,6 +1016,9 @@ textarea {
         @include breakpoint(sm) {
             font-size: 32px;
             line-height: 42px;
+            br {
+                display: none;
+            }
         }
     }
 }
@@ -1672,3 +1680,7 @@ textarea {
 //         transform: perspective(400px) rotateY(360deg);
 //     }
 // }
+.row>* {
+    padding-right: 15px;
+    padding-left: 15px;
+}

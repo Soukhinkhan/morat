@@ -9,6 +9,8 @@ START: Home 8 css
     background: #040A31;
     border-radius: 40px 40px 0px 0px;
     overflow: hidden;
+    position: relative;
+    z-index: 1;
 
     .footer-7__area-common {
         background: #040A31;
@@ -24,6 +26,7 @@ START: Home 8 css
             content: '';
             width: 100%;
             height: 100%;
+            z-index: -1;
         }
 
         .shapes {
@@ -70,9 +73,31 @@ START: Home 8 css
 //blog-8 
 .blog-8 {
     .section-heading {
+        .subtitle {
+            font-family: 'Inter Tight';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #030611;
+            opacity: 0.5;
+        }
+
         .title {
             font-family: 'Inter Tight';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 56px;
             letter-spacing: -0.02em;
+            color: #030611;
+            margin-bottom: 0;
+            margin-top: 13px;
+
+            @include breakpoint(sm) {
+                font-size: 30px;
+                line-height: 40px;
+            }
         }
     }
 
@@ -116,6 +141,12 @@ START: Home 8 css
             line-height: 26px;
             color: rgb(3 6 17 / 70%);
             margin-bottom: 0;
+
+            @include breakpoint(sm) {
+                br {
+                    display: none;
+                }
+            }
         }
     }
 
@@ -141,9 +172,31 @@ START: Home 8 css
 //project-8 
 .project-8 {
     .section-heading {
+        .subtitle {
+            font-family: 'Inter Tight';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #030611;
+            opacity: 0.5;
+        }
+
         .title {
             font-family: 'Inter Tight';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 56px;
             letter-spacing: -0.02em;
+            color: #030611;
+            margin-bottom: 0;
+            margin-top: 13px;
+
+            @include breakpoint(sm) {
+                font-size: 30px;
+                line-height: 40px;
+            }
         }
     }
 
@@ -211,9 +264,31 @@ START: Home 8 css
 //faq-8
 .faq-8 {
     .section-heading {
+        .subtitle {
+            font-family: 'Inter Tight';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #030611;
+            opacity: 0.5;
+        }
+
         .title {
             font-family: 'Inter Tight';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 56px;
             letter-spacing: -0.02em;
+            color: #030611;
+            margin-bottom: 0;
+            margin-top: 13px;
+
+            @include breakpoint(sm) {
+                font-size: 30px;
+                line-height: 40px;
+            }
         }
     }
 }
@@ -306,8 +381,200 @@ START: Home 8 css
 }
 
 //service-8
+// .service-8 {
+//     overflow: hidden;
+
+//     .section-heading {
+//         .subtitle {
+//             color: rgba(3, 6, 17, 0.5);
+//         }
+
+//         .title {
+
+//         }
+//     }
+
+//     &__wrapper {
+//         display: flex;
+//         align-items: stretch;
+//         gap: 20px;
+//         justify-content: center;
+//         flex-wrap: nowrap;
+//         transition: all 0.5s ease;
+
+//         &:not(:hover) {
+//             .service-8__item:nth-child(2) {
+//                 flex: 0 0 650px;
+//                 background: #F1F1F1;
+
+//                 .mt-primary-btn {
+//                     opacity: 1;
+//                     visibility: visible;
+//                     transform: translateX(0);
+//                 }
+
+//                 .dec br {
+//                     display: none;
+//                 }
+//             }
+//         }
+//     }
+
+//     &__item {
+//         background: #F1F1F1;
+//         border-radius: 20px;
+//         padding: 30px 35px 32px 30px;
+//         flex: 0 0 315px;
+//         height: 410px;
+//         transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+//         overflow: hidden;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+
+
+//         &:hover {
+//             flex: 0 0 650px !important;
+
+//             .mt-primary-btn {
+//                 opacity: 1;
+//                 visibility: visible;
+//                 transform: translateX(0);
+//             }
+
+//             .dec br {
+//                 display: none;
+//             }
+//         }
+
+
+//         .mt-primary-btn {
+//             opacity: 0;
+//             visibility: hidden;
+//             background: #776AD6;
+//             color: #ffffff;
+//             padding: 5px 5px 5px 17px;
+//             border-radius: 50px;
+//             text-decoration: none;
+//             display: inline-flex;
+//             align-items: center;
+//             font-size: 16px;
+//             font-weight: 500;
+//             transition: all 0.3s ease;
+//             transform: translateX(10px);
+//             white-space: nowrap;
+
+//             &:hover {
+//                 background: #030611;
+//                 color: #fff;
+//             }
+
+//             i {
+//                 width: 40px;
+//                 height: 40px;
+//                 background: #FFFFFF;
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: center;
+//                 border-radius: 50%;
+//                 color: #030611;
+//                 margin-left: 12px;
+//             }
+//         }
+//     }
+
+//     &__thumb-wrap {
+//         display: flex;
+//         align-items: flex-start;
+//         justify-content: space-between;
+//         margin-bottom: 30px;
+
+//         .thumb img {
+//             width: 130px;
+//             height: 130px;
+//             border-radius: 15px;
+//             object-fit: cover;
+//         }
+//     }
+
+//     &__content {
+//         .service-8__title {
+//             margin-bottom: 11px;
+
+//             a {
+//                 font-family: 'Inter Tight';
+//                 font-size: 32px;
+//                 line-height: 1.2;
+//                 font-weight: 500;
+//                 color: #030611;
+//                 text-decoration: none;
+//                 transition: 0.3s;
+
+//                 &:hover {
+//                     color: #776AD6;
+//                 }
+//             }
+//         }
+
+//         .dec {
+//             font-family: 'Inter Tight';
+//             font-size: 16px;
+//             line-height: 26px;
+//             color: rgba(3, 6, 17, 0.7);
+//             margin-bottom: 0;
+//             transition: 0.3s;
+//         }
+//     }
+
+
+//     @media (max-width: 1399px) {
+
+//         &__item:hover,
+//         &__wrapper:not(:hover) &__item:nth-child(2) {
+//             flex: 0 0 550px;
+//         }
+//     }
+
+//     @media (max-width: 991px) {
+//         &__wrapper {
+//             flex-direction: column;
+//             align-items: center;
+
+//             &:not(:hover) .service-8__item:nth-child(2) {
+//                 flex: 0 0 auto;
+//             }
+//         }
+
+//         &__item {
+//             flex: 0 0 auto !important;
+//             width: 100%;
+//             max-width: 400px;
+//             height: auto;
+
+//             .mt-primary-btn {
+//                 opacity: 1;
+//                 visibility: visible;
+//                 transform: translateX(0);
+//             }
+
+//             .dec br {
+//                 display: block;
+//             }
+//         }
+//     }
+// }
 .service-8 {
     overflow: hidden;
+
+    .section-heading {
+        .subtitle {
+            color: rgba(3, 6, 17, 0.5);
+        }
+
+        .title {
+            // আপনার যদি কোনো কাস্টম ফন্ট বা সাইজ লাগে এখানে দিতে পারেন
+        }
+    }
 
     &__wrapper {
         display: flex;
@@ -317,6 +584,7 @@ START: Home 8 css
         flex-wrap: nowrap;
         transition: all 0.5s ease;
 
+        // ডেস্কটপে ২য় স্লাইডটি বড় থাকবে
         &:not(:hover) {
             .service-8__item:nth-child(2) {
                 flex: 0 0 650px;
@@ -333,6 +601,11 @@ START: Home 8 css
                 }
             }
         }
+
+        // ট্যাবলেট ও মোবাইলে ফ্লেক্স র্যাপ হবে এবং ২য় স্লাইডের বিশেষ স্টাইল বন্ধ হবে
+        @media (max-width: 1200px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__item {
@@ -347,7 +620,6 @@ START: Home 8 css
         flex-direction: column;
         justify-content: space-between;
 
-
         &:hover {
             flex: 0 0 650px !important;
 
@@ -360,28 +632,45 @@ START: Home 8 css
             .dec br {
                 display: none;
             }
-        }
 
+            // ছোট স্ক্রিনে হোভার করলে যাতে উইডথ ৬৫০ না হয়, ১০০% থাকে
+            @media (max-width: 991px) {
+                flex: 0 0 auto !important;
+            }
+        }
 
         .mt-primary-btn {
             opacity: 0;
             visibility: hidden;
             background: #776AD6;
             color: #ffffff;
-            padding: 10px 25px;
+            padding: 5px 5px 5px 17px;
             border-radius: 50px;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 500;
             transition: all 0.3s ease;
             transform: translateX(10px);
             white-space: nowrap;
+            width: fit-content; // বাটনটি কন্টেন্ট অনুযায়ী ছোট থাকবে
 
             &:hover {
                 background: #030611;
                 color: #fff;
+            }
+
+            i {
+                width: 40px;
+                height: 40px;
+                background: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                color: #030611;
+                margin-left: 12px;
             }
         }
     }
@@ -416,6 +705,10 @@ START: Home 8 css
                 &:hover {
                     color: #776AD6;
                 }
+
+                @media (max-width: 575px) {
+                    font-size: 26px; // মোবাইলে টাইটেল ছোট করা হলো
+                }
             }
         }
 
@@ -429,6 +722,7 @@ START: Home 8 css
         }
     }
 
+    // --- Media Queries for Perfect Responsiveness ---
 
     @media (max-width: 1399px) {
 
@@ -438,9 +732,33 @@ START: Home 8 css
         }
     }
 
+    @media (max-width: 1199px) {
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+
+            &:not(:hover) .service-8__item:nth-child(2) {
+                flex: 0 0 auto;
+                width: 100%;
+            }
+        }
+
+        &__item {
+            flex: 0 0 auto !important;
+            width: 100%;
+            height: auto;
+            min-height: 410px;
+
+            &:hover {
+                flex: 0 0 auto !important;
+            }
+        }
+    }
+
     @media (max-width: 991px) {
         &__wrapper {
-            flex-direction: column;
+            grid-template-columns: 1fr;
             align-items: center;
 
             &:not(:hover) .service-8__item:nth-child(2) {
@@ -451,17 +769,33 @@ START: Home 8 css
         &__item {
             flex: 0 0 auto !important;
             width: 100%;
-            max-width: 400px;
+            max-width: 500px;
+            margin: 0 auto;
             height: auto;
 
             .mt-primary-btn {
                 opacity: 1;
                 visibility: visible;
                 transform: translateX(0);
+                margin-top: 20px;
             }
 
             .dec br {
                 display: block;
+            }
+        }
+    }
+
+    @media (max-width: 575px) {
+        &__item {
+            padding: 25px 9px;
+            max-width: 100%;
+        }
+
+        &__thumb-wrap {
+            .thumb img {
+                width: 100px;
+                height: 100px;
             }
         }
     }
@@ -493,7 +827,7 @@ START: Home 8 css
             font-weight: 500;
             font-size: 18px;
             line-height: 22px;
-            color: #030611;
+            color: rgb(3 6 17 / 50%);
 
             @include breakpoint(sm) {
                 font-size: 16px;
@@ -525,7 +859,7 @@ START: Home 8 css
         font-family: 'Inter Tight';
         font-style: normal;
         font-weight: 500;
-        font-size: 48px;
+        font-size: 47px;
         line-height: 56px;
         letter-spacing: -0.02em;
         text-transform: capitalize;
@@ -543,8 +877,8 @@ START: Home 8 css
         }
 
         @include breakpoint(md) {
-            font-size: 32px;
-            line-height: 42px;
+            font-size: 30px;
+            line-height: 40px;
         }
     }
 
@@ -643,8 +977,7 @@ START: Home 8 css
     }
 }
 
-//testimonail-8
-
+//testi 8
 .testimonail-8 {
     padding-top: 136px;
     padding-bottom: 120px;
@@ -652,6 +985,12 @@ START: Home 8 css
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
+
+    // ট্যাবলেট ও মোবাইলের জন্য প্যাডিং অ্যাডজাস্টমেন্ট
+    @media screen and (max-width: 991px) {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
 
     &::before {
         background: linear-gradient(270deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%),
@@ -676,6 +1015,11 @@ START: Home 8 css
         align-items: flex-end;
         padding-right: 20px;
 
+        @media screen and (max-width: 991px) {
+            align-items: center; // ট্যাবলেট থেকে সেন্টারে থাকবে
+            padding-right: 0;
+        }
+
         @media screen and (max-width: 500px) {
             padding-right: 0;
             align-items: center;
@@ -689,6 +1033,12 @@ START: Home 8 css
         align-items: center;
         padding-bottom: 260px;
         position: relative;
+
+        // ছোট স্ক্রিনে উইডথ অটো এবং প্যাডিং কমানো
+        @media screen and (max-width: 500px) {
+            width: 100%;
+            padding-bottom: 200px;
+        }
 
         .testi-8-pagination-wrapper {
             background: #FFFFFF;
@@ -753,39 +1103,50 @@ START: Home 8 css
             left: 50%;
             transform: translateX(-50%);
             z-index: 1;
+
+            @media screen and (max-width: 500px) {
+                height: 140px; // মোবাইলে লাইন ছোট করা হয়েছে
+            }
         }
     }
 
     .testimonail-8-active {
         width: 401px;
         margin: 0;
-        opacity: 1;
         overflow: visible;
 
+        // মোবাইল স্ক্রিনে কার্ডের উইডথ অ্যাডজাস্টমেন্ট
         @media screen and (max-width: 500px) {
-            width: 320px;
+            width: 100%;
+            max-width: 320px; // খুব ছোট ফোনের জন্য
         }
     }
 
     &__item {
-     
-    background: #F1F1F1;
-    overflow: hidden;
+        background: #F1F1F1;
         border-radius: 20px;
         width: 401px;
-        // box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 
         @media screen and (max-width: 500px) {
-            width: 320px;
+            width: 100%; // কার্ড ফ্লেক্সিবল করা হয়েছে
         }
 
         .testi-wrap {
             padding: 50px 30px 0 30px;
 
+            @media screen and (max-width: 500px) {
+                padding: 30px 20px 0 20px;
+            }
+
             .ttile {
                 font-size: 32px;
                 color: #030611;
                 margin-bottom: 14px;
+
+                @media screen and (max-width: 500px) {
+                    font-size: 24px;
+                }
             }
 
             .dec {
@@ -796,6 +1157,9 @@ START: Home 8 css
                 font-style: italic;
 
                 @media screen and (max-width: 500px) {
+                    font-size: 14px;
+                    line-height: 22px;
+
                     br {
                         display: none;
                     }
@@ -819,6 +1183,7 @@ START: Home 8 css
             }
         }
 
+
         .content {
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
@@ -831,18 +1196,22 @@ START: Home 8 css
                 align-items: center;
                 justify-content: space-between;
 
+                @media screen and (max-width: 500px) {
+                    padding: 15px 25px;
+                }
+
                 .reben-title {
                     font-size: 18px;
                     color: #FFFFFF;
-                    margin-bottom: 0
+                    margin-bottom: 0;
+
+                    @media screen and (max-width: 500px) {
+                        font-size: 16px;
+                    }
                 }
             }
         }
     }
-
-.color-1 .testimonail-8__item { background: rgba(255,255,255,0.50); }
-.color-2 .testimonail-8__item { background: #776AD6; }
-.color-3 .testimonail-8__item { background: #030611; }
 }
 
 //hero-8
@@ -1054,16 +1423,13 @@ START: Home 8 css
 
         .shape {
             position: absolute;
-            width: 100%; // changed fixed width to 100% for mobile
-            max-width: 1019.63px;
-            height: auto;
-            min-height: 500px;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
+            width: 100%;
+            width: 1019.63px;
+            height: 1012px;
             background: rgba(112, 125, 204, 0.6);
             filter: blur(214.5px);
-            z-index: 0;
+            right: -369px;
+            top: 158px;
         }
 
         .shape-1 {
@@ -1085,6 +1451,7 @@ START: Home 8 css
             color: #FFFFFF;
             opacity: 0.5;
             margin-bottom: 11px;
+            letter-spacing: 1px;
         }
 
         .section-title {
@@ -1096,6 +1463,7 @@ START: Home 8 css
             text-transform: capitalize;
             color: #FFFFFF;
             margin-bottom: 18px;
+            letter-spacing: 1px;
 
             @media (max-width: 1199px) {
                 font-size: 50px;
@@ -1172,11 +1540,20 @@ START: Home 8 css
         @media (max-width: 991px) {
             grid-template-columns: 1fr;
         }
+
+        @media (max-width: 576px) {
+            margin: 0;
+        }
     }
 
     &__box {
         border-radius: 20px;
         overflow: hidden;
+
+        @media (max-width: 576px) {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
 
         &:first-child {
             position: relative;

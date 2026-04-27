@@ -141,13 +141,13 @@ START: Home 5 css
                 font-weight: 500;
                 font-size: 24px;
                 line-height: 29px;
-                margin-bottom: 28px;
+                margin-bottom: 26px;
             }
         }
 
         &.footer-7__widget-item-2 {
             padding-left: 40px;
-            margin-top: 17px;
+            margin-top: 0;
 
             @include breakpoint(lg) {
                 padding-left: 0;
@@ -157,7 +157,7 @@ START: Home 5 css
 
         &.footer-7__widget-item-3 {
             padding-left: 80px;
-            margin-top: 17px;
+            margin-top: 0;
 
             @include breakpoint(lg) {
                 padding-left: 30px;
@@ -169,7 +169,7 @@ START: Home 5 css
         }
 
         &.footer-7__widget-item-4 {
-            margin-top: 17px;
+            margin-top: 0;
             padding-left: 38px;
 
             @include breakpoint(xl) {
@@ -219,7 +219,7 @@ START: Home 5 css
             font-size: 16px;
             font-weight: 400;
             line-height: 24px;
-            margin-bottom: 26px;
+            margin-bottom: 21px;
         }
 
         & span {
@@ -252,7 +252,7 @@ START: Home 5 css
         ul {
             display: grid;
             grid-template-columns: 1fr;
-            grid-gap: 15px;
+            grid-gap: 13px;
             list-style: none;
 
             li {
@@ -280,7 +280,7 @@ START: Home 5 css
 
 
                     i {
-                        font-size: 15px;
+                        font-size: 13px;
                         color: #030611;
                     }
 
@@ -445,6 +445,11 @@ START: Home 5 css
             color: #030611;
             transition: all 0.3s ease-in-out;
 
+            @include breakpoint(lg) {
+                font-size: 19px;
+                line-height: 28px;
+            }
+
             &:hover {
                 color: #0030AD;
             }
@@ -454,8 +459,13 @@ START: Home 5 css
     &__content {
         padding-bottom: 25px;
         padding-left: 20px;
-        padding-top: 30px;
-        padding-right: 30px;
+        padding-right: 28px;
+        padding-top: 28px;
+
+        @include breakpoint(lg) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
 
         @include breakpoint(sm) {
             padding-right: 10px;
@@ -519,7 +529,7 @@ START: Home 5 css
         color: rgb(3 6 17 / 60%);
         font-weight: 400;
         line-height: 22px;
-        margin-bottom: 35px;
+        margin-bottom: 33px;
     }
 
     &__author {
@@ -567,6 +577,10 @@ START: Home 5 css
                 margin-right: 8px;
                 position: relative;
                 display: block;
+
+                @include breakpoint(lg) {
+                    font-size: 13px;
+                }
 
                 &:not(:last-child) {
 
