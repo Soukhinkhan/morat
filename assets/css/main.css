@@ -14893,6 +14893,14 @@ START: Home 8 css
 /**----------------------------------------
 START: Home 9 css
 ----------------------------------------*/
+.about-section-2 {
+  padding-bottom: 200px;
+}
+@media (max-width: 1399px) {
+  .about-section-2 {
+    padding-bottom: 0;
+  }
+}
 @media only screen and (max-width: 992px) {
   .about-section-2 .about-heading-wrap {
     margin-bottom: 20px;
@@ -15384,10 +15392,23 @@ START: Home 9 css
 }
 .about-wrap-2 .about-counter-items {
   padding-left: 202px;
+  padding-top: 194px;
 }
 @media (max-width: 1399px) {
   .about-wrap-2 .about-counter-items {
     padding-left: 0;
+  }
+}
+@media (max-width: 1170px) {
+  .about-wrap-2 .about-counter-items {
+    padding-top: 100px;
+    padding-left: 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .about-wrap-2 .about-counter-items {
+    padding-top: 60px;
   }
 }
 .about-wrap-2 .about-counter-items .about-counter {
@@ -15448,12 +15469,31 @@ START: Home 9 css
     line-height: 100px;
   }
 }
+@media only screen and (max-width: 992px) {
+  .about-wrap-2 .about-counter-items .about-counter .title span {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .about-wrap-2 .about-counter-items .about-counter .title span {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
 @media (max-width: 1170px) {
   .about-wrap-2 .about-counter-items .about-counter .title {
     font-size: 89px;
+    line-height: 1;
   }
 }
 @media only screen and (max-width: 992px) {
+  .about-wrap-2 .about-counter-items .about-counter .title {
+    font-size: 60px;
+    line-height: 1;
+  }
+}
+@media only screen and (max-width: 767px) {
   .about-wrap-2 .about-counter-items .about-counter .title {
     font-size: 45px;
   }
@@ -15461,9 +15501,19 @@ START: Home 9 css
 .about-wrap-2 .about-counter-items .about-counter .title .icon {
   font-size: 85px;
 }
+@media (max-width: 1170px) {
+  .about-wrap-2 .about-counter-items .about-counter .title .icon {
+    font-size: 60px;
+  }
+}
 @media only screen and (max-width: 992px) {
   .about-wrap-2 .about-counter-items .about-counter .title .icon {
-    font-size: 45px;
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .about-wrap-2 .about-counter-items .about-counter .title .icon {
+    font-size: 30px;
   }
 }
 
@@ -15478,11 +15528,26 @@ START: Home 9 css
 @media (max-width: 1399px) {
   .about-img-2 {
     margin-right: 0;
+    position: relative;
+    height: auto;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 1170px) {
+  .about-img-2 {
+    text-align: center;
   }
 }
 .about-img-2 img {
   height: 100%;
   object-fit: cover;
+}
+@media (max-width: 1399px) {
+  .about-img-2 img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+  }
 }
 
 .service-9__item {

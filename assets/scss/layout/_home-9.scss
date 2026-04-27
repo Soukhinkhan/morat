@@ -5,6 +5,21 @@ START: Home 9 css
 ----------------------------------------*/
 
 .about-section-2 {
+    padding-bottom: 200px;
+
+    @include breakpoint(xl) {
+        padding-bottom: 0;
+    }
+    // @include breakpoint(lg) {
+    //     padding-bottom: 90px;
+    // }
+    // @include breakpoint(ms) {
+    //     padding-bottom: 80px;
+    // }
+    // @include breakpoint(sm) {
+    //     padding-bottom: 70px;
+    // }
+
     .about-heading-wrap {
         @include breakpoint(md) {
             margin-bottom: 20px;
@@ -511,17 +526,136 @@ START: Home 9 css
     }
 }
 
-.about-wrap-2 { 
+// .about-wrap-2 { 
+//     align-items: center;
+
+//     .about-counter-items {
+//         padding-left: 202px;
+//         padding-top: 194px;
+
+//         @include breakpoint(xl) {
+//             padding-left: 0;
+//         }
+
+
+
+//         .about-counter {
+//             position: relative;
+
+//             .project-h9 {
+//                 padding: 10px 25px;
+//                 background: #FFFFFF;
+//                 border: 1px solid #030611;
+//                 border-radius: 30px;
+//                 display: inline-flex;
+//                 font-family: 'Inter Tight';
+//                 font-style: normal;
+//                 font-weight: 500;
+//                 font-size: 20px;
+//                 line-height: 24px;
+//                 align-items: center;
+//                 color: #030611;
+//                 margin-bottom: 0;
+//                 position: absolute;
+//                 top: 13px;
+//                 left: 276px;
+//                 z-index: 1;
+
+//                 @include breakpoint(lg) {
+//                     left: 240px;
+//                 }
+
+//                 @include breakpoint(sm) {
+//                     left: 0;
+//                 }
+//             }
+
+//             .title {
+//                 font-family: 'Inter Tight';
+//                 font-style: normal;
+//                 font-weight: 600;
+//                 font-size: 180px;
+//                 line-height: 190px;
+//                 letter-spacing: -0.02em;
+//                 text-transform: uppercase;
+//                 color: #030611;
+
+//                 span {
+//                     font-family: 'Inter Tight';
+//                     font-style: normal;
+//                     font-weight: 600;
+//                     font-size: 180px;
+//                     line-height: 190px;
+//                     letter-spacing: -0.02em;
+//                     text-transform: uppercase;
+//                     color: #030611;
+
+//                     @include breakpoint(lg) {
+//                         font-size: 90px;
+//                         line-height: 100px;
+//                     }
+//                 }
+
+//                 @include breakpoint(lg) {
+//                     font-size: 89px;
+//                 }
+
+//                 @include breakpoint(md) {
+//                     font-size: 45px;
+//                 }
+
+//                 .icon {
+//                     font-size: 85px;
+
+//                     @include breakpoint(md) {
+//                         font-size: 45px;
+//                     }
+
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// .about-img-2 {
+//     height: 530px;
+//     width: 100%;
+//     position: absolute;
+//     bottom: 0;
+//     max-width: 100%;
+//     text-align: left;
+
+//     @include breakpoint(xl) {
+//         margin-right: 0;
+//     }
+
+//     img {
+//         height: 100%;
+//         object-fit: cover;
+//     }
+// }
+
+.about-wrap-2 {
     align-items: center;
 
     .about-counter-items {
         padding-left: 202px;
+        padding-top: 194px;
 
+        // ট্যাবলেট ও ল্যাপটপ ডিভাইসের জন্য
         @include breakpoint(xl) {
             padding-left: 0;
         }
 
+        @include breakpoint(lg) {
+            padding-top: 100px;
+            padding-left: 0;
+            text-align: center; // ছোট স্ক্রিনে কন্টেন্ট সেন্টারে রাখার জন্য
+        }
 
+        @include breakpoint(md) {
+            padding-top: 60px;
+        }
 
         .about-counter {
             position: relative;
@@ -578,23 +712,46 @@ START: Home 9 css
                         font-size: 90px;
                         line-height: 100px;
                     }
+
+                    @include breakpoint(md) {
+                        font-size: 60px;
+                        line-height: 70px;
+                    }
+
+                    @include breakpoint(sm) {
+                        font-size: 50px;
+                        line-height: 60px;
+                    }
                 }
 
                 @include breakpoint(lg) {
                     font-size: 89px;
+                    line-height: 1;
                 }
 
                 @include breakpoint(md) {
+                    font-size: 60px;
+                    line-height: 1;
+                }
+
+                @include breakpoint(sm) {
                     font-size: 45px;
                 }
 
                 .icon {
                     font-size: 85px;
 
-                    @include breakpoint(md) {
-                        font-size: 45px;
+                    @include breakpoint(lg) {
+                        font-size: 60px;
                     }
 
+                    @include breakpoint(md) {
+                        font-size: 40px;
+                    }
+
+                    @include breakpoint(sm) {
+                        font-size: 30px;
+                    }
                 }
             }
         }
@@ -611,11 +768,24 @@ START: Home 9 css
 
     @include breakpoint(xl) {
         margin-right: 0;
+        position: relative; // ছোট স্ক্রিনে ইমেজ নিচে নিচে আসার জন্য পজিশন চেঞ্জ করা হয়েছে
+        height: auto;
+        margin-top: 30px;
+    }
+
+    @include breakpoint(lg) {
+        text-align: center;
     }
 
     img {
         height: 100%;
         object-fit: cover;
+
+        @include breakpoint(xl) {
+            width: 100%;
+            height: auto;
+            max-width: 600px; // ইমেজ যেন খুব বড় না হয়ে যায়
+        }
     }
 }
 
