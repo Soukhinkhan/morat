@@ -162,6 +162,11 @@ START: Home 8 css
             color: #030611;
             transition: all 0.3s ease-in-out;
 
+            @include breakpoint(sm) {
+                font-size: 19px;
+                line-height: 26px;
+            }
+
             &:hover {
                 color: #776AD6;
             }
@@ -336,11 +341,14 @@ START: Home 8 css
             font-style: normal;
             font-weight: 500;
             font-size: 50px;
-            line-height: 56px;
+            line-height: 50px;
             text-align: center;
             letter-spacing: -0.02em;
             color: #030611;
             margin-bottom: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
 
             @include breakpoint(md) {
                 font-size: 40px;
@@ -352,7 +360,7 @@ START: Home 8 css
                 font-style: normal;
                 font-weight: 500;
                 font-size: 50px;
-                line-height: 56px;
+                line-height: 43px;
                 text-align: center;
                 letter-spacing: -0.02em;
                 color: #030611;
@@ -750,6 +758,10 @@ START: Home 8 css
             height: auto;
             min-height: 410px;
 
+            @media (max-width: 576px) {
+                min-height: 300px;
+            }
+
             &:hover {
                 flex: 0 0 auto !important;
             }
@@ -911,6 +923,7 @@ START: Home 8 css
             margin-bottom: 30px;
             padding-bottom: 20px;
             border-bottom: 1px solid #D9D9D9;
+            display: flex;
 
             span {
                 font-family: 'Inter Tight';
@@ -1413,7 +1426,7 @@ START: Home 8 css
         margin-right: 0;
         position: relative;
 
-        @media (max-width: 1199px) {
+        @media (max-width: 1202px) {
             padding: 100px 30px 30px 40px;
         }
 
@@ -1465,9 +1478,14 @@ START: Home 8 css
             margin-bottom: 18px;
             letter-spacing: 1px;
 
-            @media (max-width: 1199px) {
+            @media (max-width: 1455px) {
                 font-size: 50px;
                 line-height: 60px;
+            }
+
+            @media (max-width: 1199px) {
+                font-size: 40px;
+                line-height: 50px;
             }
 
             @media (max-width: 767px) {
@@ -1477,9 +1495,9 @@ START: Home 8 css
                 br {
                     display: none;
                 }
-
-                // remove line breaks on mobile
             }
+
+
         }
 
         .dec {
@@ -1497,6 +1515,10 @@ START: Home 8 css
             text-align: right;
             margin-top: 151px;
             position: relative;
+
+            @media (max-width: 1455px) {
+                margin-top: 70px;
+            }
 
             @media (max-width: 767px) {
                 margin-top: 50px;
@@ -1521,9 +1543,9 @@ START: Home 8 css
                     align-items: center;
                     justify-content: center;
 
-                    @media (max-width: 1199px) {
-                        right: 20px;
-                    }
+                    // @media (max-width: 1199px) {
+                    //     right: 20px;
+                    // }
                 }
             }
         }
