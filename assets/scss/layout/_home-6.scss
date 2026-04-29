@@ -933,7 +933,7 @@ START: Home 6 css
     &__btn {
         background: linear-gradient(90deg, #3E3F41 0%, #25272D 41.83%, #030611 100%);
         border-radius: 100px;
-        font-family: 'Inter Tight';
+        font-family: 'Inter Tight', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -943,8 +943,13 @@ START: Home 6 css
         align-items: center;
         gap: 14px;
         padding: 9px 8px 9px 26px;
-        transition: all 0.3s ease-in-out;
         margin-top: 42px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer; 
+        transition: all 0.4s ease-in-out;
+        position: relative;
+        overflow: hidden;
 
         @include breakpoint(xl) {
             margin-top: 20px;
@@ -952,15 +957,17 @@ START: Home 6 css
 
         &:focus {
             color: #FFFFFF;
+            outline: none;
         }
 
-        &:hover {
+        &:hover { 
             background: linear-gradient(180deg, #6000FF 0%, #3A0099 100%);
             color: #FFFFFF;
 
             i {
                 background: #030611;
                 color: #FFFFFF;
+                transform: scale(1.05);
             }
         }
 
@@ -972,7 +979,8 @@ START: Home 6 css
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 0.3s ease-in-out;
+            color: #030611;
+            transition: all 0.3s ease;
         }
     }
 }
@@ -981,6 +989,7 @@ START: Home 6 css
 .footer-6 {
     &__copyright {
         margin-top: 50px;
+        margin-bottom: 20px;
 
         @include breakpoint(md) {
             margin-top: 0;

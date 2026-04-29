@@ -12,6 +12,10 @@ START: Home 8 css
     position: relative;
     z-index: 1;
 
+    &__area-common {
+        padding-bottom: 0;
+    }
+
     &__link {
         ul {
             li {
@@ -1259,11 +1263,15 @@ START: Home 8 css
         width: 100% !important;
         position: relative; // added for absolute items
 
+        @include breakpoint(xxl) {
+            margin-top: 0 !important;
+        }
+
         @include breakpoint(xl) {
             height: 100%;
         }
 
-        @media (max-width: 767px) {
+        @media (max-width: 576px) {
             padding: 0 15px;
         }
 
@@ -1276,6 +1284,10 @@ START: Home 8 css
             @media (max-width: 767px) {
                 height: auto;
                 object-fit: cover;
+            }
+
+            @media (max-width: 575px) {
+                display: none;
             }
         }
 
@@ -1601,7 +1613,7 @@ START: Home 8 css
                     justify-content: center;
 
                     @media (max-width: 575px) {
-                        right: 20px;
+                        left: 20px;
                     }
                 }
             }

@@ -171,6 +171,7 @@
         @include breakpoint(xl) {
             margin-bottom: 43px;
         }
+
         @include breakpoint(md) {
             margin-bottom: 30px;
         }
@@ -413,7 +414,7 @@
     font-weight: 600;
     line-height: 1;
     padding: 21px 40px;
-    border: 1px solid #1C1C28; 
+    border: 1px solid #1C1C28;
     border-radius: 100px;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
@@ -542,6 +543,10 @@
         gap: 30px;
         white-space: nowrap;
 
+        @include breakpoint(xl) {
+            padding: 20px 63px;
+        }
+
         @include breakpoint(md) {
             padding: 16px 25px;
         }
@@ -584,6 +589,11 @@
         justify-content: center;
         background-color: transparent;
         border: 1px solid #696969;
+
+        @include breakpoint(xl) {
+            width: 60px;
+            height: 60px;
+        }
 
         @include breakpoint(md) {
             width: 50px;

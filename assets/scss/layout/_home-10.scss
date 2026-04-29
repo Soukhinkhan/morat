@@ -622,15 +622,18 @@ START: Home 10 css
         margin-right: 54px;
 
         @include breakpoint(xxl) {
-            padding: 40px 50px 40px 50px;
+            padding: 60px 50px 60px 50px;
             margin-right: 0;
-            margin-top: 30px;
+            margin-top: 106px;
         }
 
         @media screen and (max-width: 1351px) {
-            margin-top: 70px;
+            padding: 53px 50px 52px 50px;
+            margin-top: 106px;
         }
+
         @media screen and (max-width: 1251px) {
+            padding: 40px 50px 40px 50px;
             margin-top: 108px;
         }
 
@@ -662,8 +665,12 @@ START: Home 10 css
             color: #101010;
             margin-bottom: 21px;
 
-            @include breakpoint(xxl) {
-                margin-bottom: 0;
+            @media screen and (max-width: 1351px) {
+                margin-bottom: 10px;
+            }
+
+            @media screen and (max-width: 1251px) {
+                margin-bottom: 10px;
             }
 
             @media screen and (max-width: 500px) {
@@ -684,12 +691,24 @@ START: Home 10 css
             @include breakpoint(xxl) {
                 font-size: 70px;
                 line-height: 80px;
+            }
+
+            @media screen and (max-width: 1351px) {
                 margin-bottom: 10px;
             }
 
+            @media screen and (max-width: 1251px) {
+                margin-bottom: 10px;
+            }
+
+
             @media screen and (max-width: 1200px) {
-                font-size: 60px;
-                line-height: 70px;
+                font-size: 50px;
+                line-height: 60px;
+
+                br {
+                    display: none;
+                }
             }
 
             @media screen and (max-width: 500px) {
@@ -729,11 +748,9 @@ START: Home 10 css
             margin-top: 110px;
         }
 
-        @include breakpoint(lg) {
-            margin-top: 0;
-        }
         @include breakpoint(md) {
             margin-left: 0;
+            margin-top: 0;
         }
 
         img {
