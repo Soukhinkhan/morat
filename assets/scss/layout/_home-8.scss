@@ -12,6 +12,30 @@ START: Home 8 css
     position: relative;
     z-index: 1;
 
+    &__link {
+        ul {
+            li {
+                a {
+                    &:hover {
+                        color: #FFFFFF;
+
+                        i {
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__contact {
+        a {
+            &:hover {
+                color: #FFFFFF;
+            }
+        }
+    }
+
     .footer-7__area-common {
         background: #040A31;
         position: relative;
@@ -1235,6 +1259,26 @@ START: Home 8 css
         width: 100% !important;
         position: relative; // added for absolute items
 
+        @include breakpoint(lg) {
+            height: 100%;
+        }
+
+        @media (max-width: 767px) {
+            padding: 0 15px;
+        }
+
+        img {
+            @include breakpoint(lg) {
+                height: 100%;
+                object-fit: cover;
+            }
+
+            @media (max-width: 767px) {
+                height: auto;
+                object-fit: cover;
+            }
+        }
+
         .hero-8-items {
             display: flex;
             align-items: center;
@@ -1248,7 +1292,7 @@ START: Home 8 css
                 gap: 10px;
             }
 
-            @media (max-width: 991px) {
+            @media (max-width: 767px) {
                 position: relative;
                 flex-direction: column;
                 margin-top: 20px;
@@ -1426,12 +1470,16 @@ START: Home 8 css
         margin-right: 0;
         position: relative;
 
+        @include breakpoint(xxl) {
+            padding: 60px 40px 30px 50px;
+        }
+
         @media (max-width: 1202px) {
-            padding: 100px 30px 30px 40px;
+            padding: 60px 30px 30px 40px;
         }
 
         @media (max-width: 767px) {
-            padding: 80px 15px 30px 15px;
+            padding: 60px 15px 30px 15px;
         }
 
         .shape {
@@ -1465,6 +1513,10 @@ START: Home 8 css
             opacity: 0.5;
             margin-bottom: 11px;
             letter-spacing: 1px;
+
+            @include breakpoint(xxl) {
+                margin-bottom: 5px;
+            }
         }
 
         .section-title {
@@ -1481,6 +1533,7 @@ START: Home 8 css
             @media (max-width: 1455px) {
                 font-size: 50px;
                 line-height: 60px;
+                margin-bottom: 10px;
             }
 
             @media (max-width: 1199px) {
@@ -1517,7 +1570,11 @@ START: Home 8 css
             position: relative;
 
             @media (max-width: 1455px) {
-                margin-top: 70px;
+                margin-top: 60px;
+            }
+
+            @media (max-width: 1355px) {
+                margin-top: 15px;
             }
 
             @media (max-width: 767px) {

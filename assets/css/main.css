@@ -11651,6 +11651,26 @@ START: Home 6 css
     row-gap: 10px;
   }
 }
+.bank-card__thumb .author-wrap .text-wrap .hero-author {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+.bank-card__thumb .author-wrap .text-wrap .hero-author ul li {
+  display: inline-flex;
+}
+.bank-card__thumb .author-wrap .text-wrap .hero-author ul li:not(:last-of-type) {
+  margin-right: -14px;
+}
+.bank-card__thumb .author-wrap .text-wrap .hero-author ul li img {
+  border: 2px solid #C28DB4;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+}
 .bank-card__thumb .author-wrap .text-wrap .dec {
   font-style: normal;
   font-weight: 500;
@@ -13423,6 +13443,7 @@ START: Home 7 css
   padding: 30px 43px 30px 30px;
   overflow: hidden;
   width: 307px;
+  z-index: 1;
 }
 @media (max-width: 575px) {
   .hero-7__shapes-count-wrap .count-item {
@@ -13435,7 +13456,7 @@ START: Home 7 css
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: -1;
 }
 .hero-7__shapes-count-wrap .count-item .count-logo {
   margin-bottom: 15px;
@@ -13475,6 +13496,49 @@ START: Home 7 css
   line-height: 26px;
   color: #A9B1E0;
   margin-bottom: 0;
+}
+.hero-7__shapes-count-wrap .count-item .author .hero-author {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+.hero-7__shapes-count-wrap .count-item .author .hero-author ul {
+  display: inline-flex;
+}
+.hero-7__shapes-count-wrap .count-item .author .hero-author ul li {
+  display: inline-flex;
+}
+.hero-7__shapes-count-wrap .count-item .author .hero-author ul li:not(:last-of-type) {
+  margin-right: -14px;
+}
+.hero-7__shapes-count-wrap .count-item .author .hero-author ul li img {
+  border: 2px solid #1A1A35;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+}
+.hero-7__shapes-count-wrap .count-item .author .hero-author ul a {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #1A1A35;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.hero-7__shapes-count-wrap .count-item .author .hero-author ul a span {
+  width: 37px;
+  height: 37px;
+  background: #9382FF;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #FFFFFF;
 }
 .hero-7__prefect {
   display: flex;
@@ -13714,6 +13778,15 @@ START: Home 8 css
   overflow: hidden;
   position: relative;
   z-index: 1;
+}
+.home-8-footer__link ul li a:hover {
+  color: #FFFFFF;
+}
+.home-8-footer__link ul li a:hover i {
+  color: #FFFFFF;
+}
+.home-8-footer__contact a:hover {
+  color: #FFFFFF;
 }
 .home-8-footer .footer-7__area-common {
   background: #040A31;
@@ -14629,6 +14702,28 @@ START: Home 8 css
   width: 100% !important;
   position: relative;
 }
+@media (max-width: 1170px) {
+  .hero-8__thumb {
+    height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .hero-8__thumb {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 1170px) {
+  .hero-8__thumb img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 767px) {
+  .hero-8__thumb img {
+    height: auto;
+    object-fit: cover;
+  }
+}
 .hero-8__thumb .hero-8-items {
   display: flex;
   align-items: center;
@@ -14643,7 +14738,7 @@ START: Home 8 css
     gap: 10px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .hero-8__thumb .hero-8-items {
     position: relative;
     flex-direction: column;
@@ -14813,14 +14908,19 @@ START: Home 8 css
   margin-right: 0;
   position: relative;
 }
+@media (max-width: 1600px) {
+  .hero-8 .hero-10__content {
+    padding: 60px 40px 30px 50px;
+  }
+}
 @media (max-width: 1202px) {
   .hero-8 .hero-10__content {
-    padding: 100px 30px 30px 40px;
+    padding: 60px 30px 30px 40px;
   }
 }
 @media (max-width: 767px) {
   .hero-8 .hero-10__content {
-    padding: 80px 15px 30px 15px;
+    padding: 60px 15px 30px 15px;
   }
 }
 .hero-8 .hero-10__content .shape {
@@ -14852,6 +14952,11 @@ START: Home 8 css
   margin-bottom: 11px;
   letter-spacing: 1px;
 }
+@media (max-width: 1600px) {
+  .hero-8 .hero-10__content .subtitle {
+    margin-bottom: 5px;
+  }
+}
 .hero-8 .hero-10__content .section-title {
   font-family: "Inter Tight";
   font-style: normal;
@@ -14867,6 +14972,7 @@ START: Home 8 css
   .hero-8 .hero-10__content .section-title {
     font-size: 50px;
     line-height: 60px;
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 1199px) {
@@ -14901,7 +15007,12 @@ START: Home 8 css
 }
 @media (max-width: 1455px) {
   .hero-8 .hero-10__content .thumb {
-    margin-top: 70px;
+    margin-top: 60px;
+  }
+}
+@media (max-width: 1355px) {
+  .hero-8 .hero-10__content .thumb {
+    margin-top: 15px;
   }
 }
 @media (max-width: 767px) {
@@ -16510,6 +16621,12 @@ START: Home 9 css
   row-gap: 10px;
   padding-left: 25px;
 }
+@media (max-width: 1170px) {
+  .progress-9__item .author {
+    gap: 10px;
+    padding-left: 10px;
+  }
+}
 .progress-9__item .author img {
   border-radius: 10px;
 }
@@ -16580,7 +16697,7 @@ START: Home 9 css
   .progress-9__item .content .skill .progress .progress-bar span {
     font-size: 14px;
     padding-top: 20px;
-    top: -35px;
+    top: -46px;
   }
 }
 
@@ -16603,6 +16720,16 @@ START: Home 9 css
   z-index: 1;
 }
 @media (max-width: 1600px) {
+  .hero-9__shapes-shape-1 {
+    height: 100%;
+    left: 80px;
+  }
+  .hero-9__shapes-shape-1 img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 1399px) {
   .hero-9__shapes-shape-1 {
     display: none;
   }
@@ -16778,6 +16905,19 @@ START: Home 9 css
   border-radius: 0;
 }
 
+@media only screen and (max-width: 992px) {
+  .blog-9__item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .blog-9__item .h2-blog-card-2 {
+    margin-top: 0;
+  }
+}
+
 /**----------------------------------------
 START: Home 10 css
 ----------------------------------------*/
@@ -16915,6 +17055,12 @@ START: Home 10 css
   color: #999999;
   margin-bottom: 0;
 }
+@media (max-width: 1399px) {
+  .platforms__content .dec {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
 .platforms__title {
   margin-bottom: 5px;
 }
@@ -16927,10 +17073,16 @@ START: Home 10 css
   color: #101010;
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 1399px) {
+  .platforms__title a {
+    font-size: 23px;
+    line-height: 33px;
+  }
+}
 @media (max-width: 1170px) {
   .platforms__title a {
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 23px;
+    line-height: 33px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -16984,7 +17136,7 @@ START: Home 10 css
 .counter-10__item {
   border: 1px solid rgba(16, 16, 16, 0.1);
   border-radius: 161px;
-  padding: 82px 50px 91px 50px;
+  padding: 82px 47px 91px 47px;
   text-align: center;
 }
 @media only screen and (max-width: 767px) {
@@ -17000,6 +17152,12 @@ START: Home 10 css
   color: #101010;
   margin-bottom: 0;
 }
+@media (max-width: 1399px) {
+  .counter-10__item .title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .counter-10__item .title {
     font-size: 50px;
@@ -17012,6 +17170,12 @@ START: Home 10 css
   font-size: 80px;
   line-height: 80px;
   color: #101010;
+}
+@media (max-width: 1399px) {
+  .counter-10__item .title span {
+    font-size: 60px;
+    line-height: 70px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .counter-10__item .title span {
@@ -17027,7 +17191,7 @@ START: Home 10 css
   color: #555555;
   margin-bottom: 0;
 }
-@media only screen and (max-width: 992px) {
+@media (max-width: 1600px) {
   .counter-10__item .dec br {
     display: none;
   }
@@ -17288,12 +17452,12 @@ START: Home 10 css
 }
 @media (max-width: 1600px) {
   .hero-10__content {
-    padding: 60px 70px 96px 70px;
+    padding: 40px 50px 40px 50px;
   }
 }
 @media (max-width: 1170px) {
   .hero-10__content {
-    padding: 60px 40px 70px 40px;
+    padding: 40px 40px 40px 40px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -17323,7 +17487,7 @@ START: Home 10 css
 }
 @media (max-width: 1600px) {
   .hero-10__content .subtitle {
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 500px) {
@@ -17345,7 +17509,7 @@ START: Home 10 css
   .hero-10__content .section-title {
     font-size: 70px;
     line-height: 80px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 1200px) {

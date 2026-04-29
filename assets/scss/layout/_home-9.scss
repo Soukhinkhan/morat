@@ -1730,6 +1730,11 @@ START: Home 9 css
             row-gap: 10px;
             padding-left: 25px;
 
+            @include breakpoint(lg) {
+                gap: 10px;
+                padding-left: 10px;
+            }
+
             img {
                 border-radius: 10px;
             }
@@ -1805,7 +1810,7 @@ START: Home 9 css
                             @include breakpoint(sm) {
                                 font-size: 14px;
                                 padding-top: 20px;
-                                top: -35px;
+                                top: -46px;
                             }
                         }
                     }
@@ -1838,6 +1843,16 @@ START: Home 9 css
             z-index: 1;
 
             @include breakpoint(xxl) {
+                height: 100%;
+                left: 80px;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            @include breakpoint(xl) {
                 display: none;
             }
         }
@@ -2027,5 +2042,22 @@ START: Home 9 css
         background-color: transparent;
         padding: 0;
         border-radius: 0;
+    }
+}
+
+//blog-9
+.blog-9 {
+    &__item {
+        @include breakpoint(md) {
+            display: flex;
+            align-items: center;
+            gap: 30px; 
+        }
+
+        .h2-blog-card-2 {
+            @include breakpoint(md) { 
+                margin-top: 0;
+            }
+        }
     }
 }
