@@ -987,13 +987,13 @@ START: Home 6 css
 
 //footer-6
 .footer-6 {
+
+    &__area-common {
+        padding-bottom: 0 !important;
+    }
     &__copyright {
         margin-top: 50px;
         margin-bottom: 20px;
-
-        @include breakpoint(md) {
-            margin-top: 0;
-        }
     }
 }
 

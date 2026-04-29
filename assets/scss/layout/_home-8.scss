@@ -1285,10 +1285,6 @@ START: Home 8 css
                 height: auto;
                 object-fit: cover;
             }
-
-            @media (max-width: 575px) {
-                display: none;
-            }
         }
 
         .hero-8-items {
@@ -1613,8 +1609,11 @@ START: Home 8 css
                     justify-content: center;
 
                     @media (max-width: 575px) {
-                        left: 20px;
-                    }
+                        right: 290px;
+                    } 
+                    @media (max-width: 320px) {
+                        right: 215px;
+                    } 
                 }
             }
         }

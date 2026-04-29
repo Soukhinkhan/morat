@@ -11892,14 +11892,12 @@ START: Home 6 css
   transition: all 0.3s ease;
 }
 
+.footer-6__area-common {
+  padding-bottom: 0 !important;
+}
 .footer-6__copyright {
   margin-top: 50px;
   margin-bottom: 20px;
-}
-@media only screen and (max-width: 992px) {
-  .footer-6__copyright {
-    margin-top: 0;
-  }
 }
 
 .footer-6__widget .footer-4__widget-title-2 .title-footer-2 {
@@ -14769,11 +14767,6 @@ START: Home 8 css
     object-fit: cover;
   }
 }
-@media (max-width: 575px) {
-  .hero-8__thumb img {
-    display: none;
-  }
-}
 .hero-8__thumb .hero-8-items {
   display: flex;
   align-items: center;
@@ -15089,7 +15082,12 @@ START: Home 8 css
 }
 @media (max-width: 575px) {
   .hero-8 .hero-10__content .thumb .video-btn a {
-    left: 20px;
+    right: 290px;
+  }
+}
+@media (max-width: 320px) {
+  .hero-8 .hero-10__content .thumb .video-btn a {
+    right: 215px;
   }
 }
 
@@ -16154,7 +16152,7 @@ START: Home 9 css
   padding: 30px;
   border-bottom: 1px solid rgba(28, 28, 40, 0.1);
 }
-@media only screen and (max-width: 992px) {
+@media (max-width: 1170px) {
   .h2-blog-thumb {
     padding: 20px;
   }
@@ -17572,7 +17570,7 @@ START: Home 10 css
 }
 @media screen and (max-width: 1251px) {
   .hero-10__content {
-    padding: 40px 50px 40px 50px;
+    padding: 47px 50px 47px 50px;
     margin-top: 108px;
   }
 }

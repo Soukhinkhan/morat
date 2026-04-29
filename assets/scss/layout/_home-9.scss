@@ -1173,7 +1173,7 @@ START: Home 9 css
         padding: 30px;
         border-bottom: 1px solid rgba(28, 28, 40, 0.1);
 
-        @include breakpoint(md) {
+        @include breakpoint(lg) {
             padding: 20px;
         }
 
