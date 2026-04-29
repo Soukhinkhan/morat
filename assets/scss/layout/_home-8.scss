@@ -1259,7 +1259,7 @@ START: Home 8 css
         width: 100% !important;
         position: relative; // added for absolute items
 
-        @include breakpoint(lg) {
+        @include breakpoint(xl) {
             height: 100%;
         }
 
@@ -1268,7 +1268,7 @@ START: Home 8 css
         }
 
         img {
-            @include breakpoint(lg) {
+            @include breakpoint(xl) {
                 height: 100%;
                 object-fit: cover;
             }
@@ -1292,7 +1292,7 @@ START: Home 8 css
                 gap: 10px;
             }
 
-            @media (max-width: 767px) {
+            @media (max-width: 575px) {
                 position: relative;
                 flex-direction: column;
                 margin-top: 20px;
@@ -1600,9 +1600,9 @@ START: Home 8 css
                     align-items: center;
                     justify-content: center;
 
-                    // @media (max-width: 1199px) {
-                    //     right: 20px;
-                    // }
+                    @media (max-width: 575px) {
+                        right: 20px;
+                    }
                 }
             }
         }

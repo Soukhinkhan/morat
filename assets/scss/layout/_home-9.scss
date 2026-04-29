@@ -1173,6 +1173,10 @@ START: Home 9 css
         padding: 30px;
         border-bottom: 1px solid rgba(28, 28, 40, 0.1);
 
+        @include breakpoint(md) {
+            padding: 20px;
+        }
+
         @media only screen and (max-width: 576px) {
             padding: 5px;
         }
@@ -1357,6 +1361,10 @@ START: Home 9 css
     row-gap: 10px;
     margin-bottom: 20px;
 
+    @include breakpoint(md) {
+        row-gap: 0;
+    }
+
     li {
         font-family: var(--mt-ff-body);
         color: var(--mt-color-text-body);
@@ -1404,6 +1412,10 @@ START: Home 9 css
     &-2 {
         border-bottom: 1px solid rgba(28, 28, 40, 0.1);
         padding: 0 40px;
+
+        @include breakpoint(md) {
+            padding: 0 20px;
+        }
 
         @include breakpoint(sm) {
             padding: 0;
@@ -1478,6 +1490,7 @@ START: Home 9 css
     @include breakpoint(sm) {
         padding: 0;
         padding-left: 30px;
+        padding-right: 30px;
     }
 
     @media only screen and (max-width: 450px) {
@@ -1826,6 +1839,7 @@ START: Home 9 css
 .hero-9 {
     position: relative;
     padding: 183px 0 160px 0;
+    overflow: hidden;
 
     @include breakpoint(md) {
         padding: 160px 0 120px 0;
@@ -1845,6 +1859,7 @@ START: Home 9 css
             @include breakpoint(xxl) {
                 height: 100%;
                 left: 80px;
+                z-index: 0;
 
                 img {
                     height: 100%;
@@ -1852,8 +1867,8 @@ START: Home 9 css
                 }
             }
 
-            @include breakpoint(xl) {
-                display: none;
+            @include breakpoint(sm) {
+                left: 0;
             }
         }
 
@@ -1882,7 +1897,7 @@ START: Home 9 css
             bottom: 60px;
             right: 0;
 
-            @include breakpoint(sm) {
+            @include breakpoint(lg) {
                 display: none;
             }
         }
@@ -1909,6 +1924,10 @@ START: Home 9 css
             justify-content: center;
             border-radius: 50%;
             transition: all 0.3s ease-in-out;
+
+            @include breakpoint(sm) {
+                left: 15px;
+            }
 
             &:hover {
                 color: rgba(255, 255, 255, 0.5);
@@ -1974,12 +1993,7 @@ START: Home 9 css
             line-height: 26px;
             color: rgb(255 255 255 / 80%);
             margin-bottom: 0;
-
-            @include breakpoint(xxl) {
-                br {
-                    display: none;
-                }
-            }
+            max-width: 397px;
         }
 
         .mt-primary-btn {
@@ -2024,6 +2038,14 @@ START: Home 9 css
         position: relative;
         padding-left: 10px;
 
+        @media only screen and (max-width: 1200px) {
+            padding-left: 90px;
+        }
+
+        @include breakpoint(md) {
+            padding-left: 0;
+        }
+
         .dec {
             font-family: 'Inter Tight';
             font-style: normal;
@@ -2051,11 +2073,15 @@ START: Home 9 css
         @include breakpoint(md) {
             display: flex;
             align-items: center;
-            gap: 30px; 
+            gap: 30px;
+        }
+
+        @media only screen and (max-width: 575px) {
+            flex-wrap: wrap;
         }
 
         .h2-blog-card-2 {
-            @include breakpoint(md) { 
+            @include breakpoint(md) {
                 margin-top: 0;
             }
         }

@@ -954,9 +954,15 @@ START: Home 6 css
             color: #FFFFFF;
         }
 
-        // &:hover {
-        //     color: #ffc226;
-        // }
+        &:hover {
+            background: linear-gradient(180deg, #6000FF 0%, #3A0099 100%);
+            color: #FFFFFF;
+
+            i {
+                background: #030611;
+                color: #FFFFFF;
+            }
+        }
 
         i {
             width: 40px;

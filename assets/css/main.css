@@ -1759,6 +1759,10 @@ textarea:focus {
   padding-left: 15px;
 }
 
+.mb-minus-40 {
+  margin-bottom: -40px;
+}
+
 /**
     Buttons CSS
 */
@@ -1904,6 +1908,11 @@ textarea:focus {
 @media (max-width: 1399px) {
   .rr-primary-btn-2 {
     margin-bottom: 43px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .rr-primary-btn-2 {
+    margin-bottom: 30px;
   }
 }
 .rr-primary-btn-3 {
@@ -11845,6 +11854,14 @@ START: Home 6 css
 .bank-card__btn:focus {
   color: #FFFFFF;
 }
+.bank-card__btn:hover {
+  background: linear-gradient(180deg, #6000FF 0%, #3A0099 100%);
+  color: #FFFFFF;
+}
+.bank-card__btn:hover i {
+  background: #030611;
+  color: #FFFFFF;
+}
 .bank-card__btn i {
   width: 40px;
   height: 40px;
@@ -14702,7 +14719,7 @@ START: Home 8 css
   width: 100% !important;
   position: relative;
 }
-@media (max-width: 1170px) {
+@media (max-width: 1399px) {
   .hero-8__thumb {
     height: 100%;
   }
@@ -14712,7 +14729,7 @@ START: Home 8 css
     padding: 0 15px;
   }
 }
-@media (max-width: 1170px) {
+@media (max-width: 1399px) {
   .hero-8__thumb img {
     height: 100%;
     object-fit: cover;
@@ -14738,7 +14755,7 @@ START: Home 8 css
     gap: 10px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .hero-8__thumb .hero-8-items {
     position: relative;
     flex-direction: column;
@@ -15036,6 +15053,11 @@ START: Home 8 css
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 575px) {
+  .hero-8 .hero-10__content .thumb .video-btn a {
+    right: 20px;
+  }
 }
 
 .hero-section-8__wrapper {
@@ -16099,6 +16121,11 @@ START: Home 9 css
   padding: 30px;
   border-bottom: 1px solid rgba(28, 28, 40, 0.1);
 }
+@media only screen and (max-width: 992px) {
+  .h2-blog-thumb {
+    padding: 20px;
+  }
+}
 @media only screen and (max-width: 576px) {
   .h2-blog-thumb {
     padding: 5px;
@@ -16277,6 +16304,11 @@ START: Home 9 css
   row-gap: 10px;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 992px) {
+  .post-meta {
+    row-gap: 0;
+  }
+}
 .post-meta li {
   font-family: var(--mt-ff-body);
   color: var(--mt-color-text-body);
@@ -16323,6 +16355,11 @@ START: Home 9 css
 .post-meta-2 {
   border-bottom: 1px solid rgba(28, 28, 40, 0.1);
   padding: 0 40px;
+}
+@media only screen and (max-width: 992px) {
+  .post-meta-2 {
+    padding: 0 20px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .post-meta-2 {
@@ -16395,6 +16432,7 @@ START: Home 9 css
   .post-content-2 {
     padding: 0;
     padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -16704,6 +16742,7 @@ START: Home 9 css
 .hero-9 {
   position: relative;
   padding: 183px 0 160px 0;
+  overflow: hidden;
 }
 @media only screen and (max-width: 992px) {
   .hero-9 {
@@ -16723,15 +16762,16 @@ START: Home 9 css
   .hero-9__shapes-shape-1 {
     height: 100%;
     left: 80px;
+    z-index: 0;
   }
   .hero-9__shapes-shape-1 img {
     height: 100%;
     object-fit: cover;
   }
 }
-@media (max-width: 1399px) {
+@media only screen and (max-width: 767px) {
   .hero-9__shapes-shape-1 {
-    display: none;
+    left: 0;
   }
 }
 .hero-9__shapes-shape-2 {
@@ -16757,7 +16797,7 @@ START: Home 9 css
   bottom: 60px;
   right: 0;
 }
-@media only screen and (max-width: 767px) {
+@media (max-width: 1170px) {
   .hero-9__shapes-shape-4 {
     display: none;
   }
@@ -16784,6 +16824,11 @@ START: Home 9 css
   justify-content: center;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
+}
+@media only screen and (max-width: 767px) {
+  .hero-9__shapes-shape-5 {
+    left: 15px;
+  }
 }
 .hero-9__shapes-shape-5:hover {
   color: rgba(255, 255, 255, 0.5);
@@ -16845,11 +16890,7 @@ START: Home 9 css
   line-height: 26px;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 0;
-}
-@media (max-width: 1600px) {
-  .hero-9__content .dec br {
-    display: none;
-  }
+  max-width: 397px;
 }
 .hero-9__content .mt-primary-btn {
   margin-top: 42px;
@@ -16889,6 +16930,16 @@ START: Home 9 css
   position: relative;
   padding-left: 10px;
 }
+@media only screen and (max-width: 1200px) {
+  .hero-9__right-content {
+    padding-left: 90px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .hero-9__right-content {
+    padding-left: 0;
+  }
+}
 .hero-9__right-content .dec {
   font-family: "Inter Tight";
   font-style: normal;
@@ -16910,6 +16961,11 @@ START: Home 9 css
     display: flex;
     align-items: center;
     gap: 30px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .blog-9__item {
+    flex-wrap: wrap;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -17055,7 +17111,7 @@ START: Home 10 css
   color: #999999;
   margin-bottom: 0;
 }
-@media (max-width: 1399px) {
+@media (max-width: 1600px) {
   .platforms__content .dec {
     font-size: 16px;
     line-height: 26px;
@@ -17073,7 +17129,7 @@ START: Home 10 css
   color: #101010;
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 1399px) {
+@media (max-width: 1600px) {
   .platforms__title a {
     font-size: 23px;
     line-height: 33px;
@@ -17350,6 +17406,24 @@ START: Home 10 css
   color: #101010;
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 1600px) {
+  .team-10__title a {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 1399px) {
+  .team-10__title a {
+    font-size: 27px;
+    line-height: 37px;
+  }
+}
+@media (max-width: 1170px) {
+  .team-10__title a {
+    font-size: 23px;
+    line-height: 33px;
+  }
+}
 .team-10__title a:hover {
   color: #BDEC36;
 }
@@ -17453,6 +17527,18 @@ START: Home 10 css
 @media (max-width: 1600px) {
   .hero-10__content {
     padding: 40px 50px 40px 50px;
+    margin-right: 0;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 1351px) {
+  .hero-10__content {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 1251px) {
+  .hero-10__content {
+    margin-top: 108px;
   }
 }
 @media (max-width: 1170px) {
@@ -17550,6 +17636,13 @@ START: Home 10 css
 @media (max-width: 1600px) {
   .hero-10__thumb {
     width: 100%;
+    margin-left: 0;
+    margin-top: 110px;
+  }
+}
+@media (max-width: 1170px) {
+  .hero-10__thumb {
+    margin-top: 0;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -17566,7 +17659,7 @@ START: Home 10 css
   width: 100%;
   top: 10px;
 }
-@media (max-width: 1399px) {
+@media (max-width: 1600px) {
   .header-10 {
     max-width: 100%;
   }

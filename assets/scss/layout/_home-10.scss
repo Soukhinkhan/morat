@@ -146,7 +146,7 @@ START: Home 10 css
             color: #999999;
             margin-bottom: 0;
 
-            @include breakpoint(xl) {
+            @include breakpoint(xxl) {
                 font-size: 16px;
                 line-height: 26px;
             }
@@ -165,7 +165,7 @@ START: Home 10 css
             color: #101010;
             transition: all 0.3s ease-in-out;
 
-            @include breakpoint(xl) {
+            @include breakpoint(xxl) {
                 font-size: 23px;
                 line-height: 33px;
             }
@@ -491,6 +491,21 @@ START: Home 10 css
             color: #101010;
             transition: all 0.3s ease-in-out;
 
+            @include breakpoint(xxl) {
+                font-size: 30px;
+                line-height: 40px;
+            }
+
+            @include breakpoint(xl) {
+                font-size: 27px;
+                line-height: 37px;
+            }
+
+            @include breakpoint(lg) {
+                font-size: 23px;
+                line-height: 33px;
+            }
+
             &:hover {
                 color: #BDEC36;
             }
@@ -608,6 +623,15 @@ START: Home 10 css
 
         @include breakpoint(xxl) {
             padding: 40px 50px 40px 50px;
+            margin-right: 0;
+            margin-top: 30px;
+        }
+
+        @media screen and (max-width: 1351px) {
+            margin-top: 70px;
+        }
+        @media screen and (max-width: 1251px) {
+            margin-top: 108px;
         }
 
         @include breakpoint(lg) {
@@ -701,8 +725,13 @@ START: Home 10 css
 
         @include breakpoint(xxl) {
             width: 100%;
+            margin-left: 0;
+            margin-top: 110px;
         }
 
+        @include breakpoint(lg) {
+            margin-top: 0;
+        }
         @include breakpoint(md) {
             margin-left: 0;
         }
@@ -718,7 +747,7 @@ START: Home 10 css
     width: 100%;
     top: 10px;
 
-    @include breakpoint(xl) {
+    @include breakpoint(xxl) {
         max-width: 100%;
     }
 
